@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.vince.pub/blog-file/photo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://cdn.vince.pub/blog-file/photo/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="分享教程心得体验">
+  <meta name="author" content="Vince">
+  <meta name="keywords" content="">
+  <title>关于 - Vince&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/atom-one-dark.min.css" />
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/demo.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1744971_dbtmro899q7.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/jquery.horizontalmenu.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/normalize.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/icheck-material.css">
+
+
+
+  <script  src="/js/utils.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 60vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Vince's Blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-icon_wangye"></i>
+                索引
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tags/">
+                    <i class="iconfont icon-tags-fill"></i>
+                    标签
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/">
+                    <i class="iconfont icon-archive-fill"></i>
+                    归档
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/">
+                    <i class="iconfont icon-category-fill"></i>
+                    分类
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/note/">
+                <i class="iconfont icon-clipboard"></i>
+                随笔
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/comment/">
+                <i class="iconfont icon-comments"></i>
+                留言
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-gongneng"></i>
+                更多
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://Cloud.vince.pub">
+                    <i class="iconfont icon-wenjianjia"></i>
+                    私有云
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://file.vince.pub/">
+                    <i class="iconfont icon-fenzhi"></i>
+                    文件
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/Fluid-Source-File/">
+                    <i class="iconfont icon-icon-test1"></i>
+                    Fluid 镜像站
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('https://cdn.vince.pub/blog-file/photo/about.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-md">
+        <div class="py-5" id="board"
+          >
+          
+            <div class="about-avatar">
+              <img src="https://cdn.vince.pub/blog-file/photo/vince_logo.jpg" srcset="/img/loading.gif"
+                   class="img-fluid" alt="avatar">
+            </div>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+    <div class="text-center">
+        <div class="about-info">
+            <div class="about-name">
+                vince
+            </div>
+            <div class="about-intro">
+                前某不知名论坛版主 / Linux爱好者 / 三流业余前端选手
+            </div>
+            <div class="about-icons">
+                
+                    
+                        
+                            
+                                <a target="_blank" rel="noopener" href="https://github.com/vinceying/" class="
+           hint--bottom hint--rounded" aria-label=GitHub
+        >
+          <i class="iconfont icon-github-fill" aria-hidden="true"></i>
+          
+        </a>
+                                
+                    
+                        
+                            
+                                <a target="_blank" rel="noopener" href="https://weibo.com/xwvince/" class="
+           hint--bottom hint--rounded" aria-label=Weibo
+        >
+          <i class="iconfont icon-weibo-fill" aria-hidden="true"></i>
+          
+        </a>
+                                
+                    
+                        
+                            
+                                <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/vince-best" class="
+           hint--bottom hint--rounded" aria-label=Zhihu
+        >
+          <i class="iconfont icon-zhihu-fill" aria-hidden="true"></i>
+          
+        </a>
+                                
+                    
+                        
+                            
+                                <a href="mailto:admin@vince.pub" class="
+           " 
+        >
+          <i class="iconfont icon-email" aria-hidden="true"></i>
+          
+        </a>
+                                
+            </div>
+        </div>
+    </div>
+    <div class="mt-5 markdown-body">
+        <h2 id="关于本站"><a class="markdownIt-Anchor" href="# 关于本站"></a> 关于本站</h2>
+<p>之前使用的是 Cloud Studio 的 Pages 服务，可以通过使用动态网站，使用 WordPress 来搭建我的博客，但是后来由于相关服务的升级， Cloud Studio 停止了相关服务，网站也没有写什么内容。</p>
+<p>由于我之前所在的两个论坛都相继关闭，我的一些帖子都没有备份。这对我来说是一大损失，于是打算搭建本站。使用 Github Pages+Hexo 框架，目的就是存一些我的文章和帖子。</p>
+<h2 id="关于我愿望"><a class="markdownIt-Anchor" href="# 关于我愿望"></a> 关于我 &amp; 愿望</h2>
+<ul>
+<li>前技德 Remix 论坛超级版主 梦想赞助商</li>
+<li>前智友论坛（安智）版主 撰稿</li>
+<li>经历过几个小项目</li>
+<li>伪果粉</li>
+</ul>
+<p>还在路上，希望能够一直热爱一些我所热爱的东西，也希望可以更加自律。同时也在培养自己的版权意识。之前也说了，主要是记录一下自己的文章和一些内容，佛系青年的佛系网站，<strong>没有追求什么访客量 </strong>，当然也不会有什么访客量，主要为了给自己留点回忆。当前任务：<strong> 减肥</strong>。</p>
+<h2 id="一言用代码表达语言的魅力"><a class="markdownIt-Anchor" href="# 一言用代码表达语言的魅力"></a> 一言，用代码表达语言的魅力</h2>
+<p id="hitokoto">:D 获取中...</p>
+<script>
+  fetch('https://v1.hitokoto.cn')
+    .then(response => response.json())
+    .then(data => {const hitokoto = document.getElementById('hitokoto')
+      hitokoto.innerText = data.hitokoto
+      })
+      .catch(console.error)
+</script>
+<h2 id="最后重大更新与运行时间"><a class="markdownIt-Anchor" href="# 最后重大更新与运行时间"></a> 最后重大更新与运行时间</h2>
+<p>最后更新于 2020/6/27，更新内容为网站改版。</p>
+<div>
+  <span id="timeDate">载入天数...</span>
+  <span id="times">载入时分秒...</span>
+  <script>
+  var now = new Date();
+  function createtime(){var grt= new Date("04/05/2020 00:00:00");
+      now.setTime(now.getTime()+250);
+      days = (now - grt) / 1000 / 60 / 60 / 24;
+      dnum = Math.floor(days);
+      hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
+      hnum = Math.floor(hours);
+      if(String(hnum).length ==1 ){hnum = "0" + hnum;}
+      minutes = (now - grt) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+      mnum = Math.floor(minutes);
+      if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+      seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+      snum = Math.round(seconds);
+      if(String(snum).length ==1 ){snum = "0" + snum;}
+      document.getElementById("timeDate").innerHTML = "本站运行 &nbsp"+dnum+"&nbsp 天";
+      document.getElementById("times").innerHTML = hnum + "&nbsp 小时 &nbsp" + mnum + "&nbsp 分 &nbsp" + snum + "&nbsp 秒";
+  }
+  setInterval("createtime()",250);
+  </script>
+</div>
+<h2 id="相关内容及信息"><a class="markdownIt-Anchor" href="# 相关内容及信息"></a> 相关内容及信息</h2>
+
+    </div>
+
+    <div class="content">
+        <div class="ah-tab-wrapper">
+            <div class="ah-tab">
+                <a class="ah-tab-item" data-ah-tab-active="true" href="">更新日志及部署状态</a>
+                <a class="ah-tab-item" href="">本站使用的一些服务</a>
+                <a class="ah-tab-item" href="">相关版权</a>
+                <a class="ah-tab-item" href="">本站节点信息</a>
+                <a class="ah-tab-item" href="">移动端页面预览</a>
+            </div>
+        </div>
+        <div class="ah-tab-content-wrapper">
+            <div class="ah-tab-content" data-ah-tab-active="true">
+                <img src="https://cdn.vince.pub/blog-file/photo/68747470733a2f2f6170692e6e65746c6966792e636f6d2f6170692f76312f6261646765732f33356661376434392d306333322d343766382d623839302d6365333235356336373364652f6465706c6f792d737461747573.svg" srcset="/img/loading.gif" alt="badge1" /></a>
+                <img src="https://cdn.vince.pub/blog-file/photo/badge1.svg" srcset="/img/loading.gif" alt="badge1" /></a>
+                <img src="https://cdn.vince.pub/blog-file/photo/badge2.svg" srcset="/img/loading.gif" alt="badge2" /></a>
+                <h1> </h1>
+                <li>网站整体建设开发（2020/4/4）</li>
+                <li>网站插件部署（2020/4/5）</li>
+                <li>网站关于页面完善（2020/4/5）</li>
+                <li>一些错误更正（2020/4/6）</li>
+                <li>jsdelivr 使用参考 （2020/4/6）</li>
+                <li>友链页面 （2020/4/7）</li>
+                <li>视频播放插件 （2020/4/7）</li>
+                <li>关闭分类页，打开归档页面（2020/4/7）</li>
+                <li>更换评论系统为 valine ，创建留言页面（2020/4/7）</li>
+                <li>顶部任务栏图标（2020/4/8）</li>
+                <li>中英文规范与博客版本更新（2020/4/10）</li>
+                <li>加密插件（2020/4/10）</li>
+                <li>统计服务及内容管理页面（2020/4/10）</li>
+                <li>valine 邮箱提醒（2020/4/10）</li>
+                <li>GitHub Actions 部署（2020/5/9)</li>
+                <li>更新 footer (2020/5/10)</li>
+                <li>移动一言与运行时间到关于页面(2020/5/10)</li>
+                <li>更换 CDN (2020/5/11)</li>
+                <li>整合关于页面（2020/5/21）</li>
+                <li>引入 Icheck-material（2020/5/22）</li>
+                <li>友链界面重新整合（2020/5/24）</li>
+                <li>优化菜单选项及加入更多页面（2020/5/24）</li>
+                <li>多节点部署（2020/5/26）</li>
+            </div>
+            <div class="ah-tab-content">
+                <strong>以下为本站所使用程序及插件</strong>
+                <h2> </h2>
+                <li><strong><a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="noopener">Fluid</a></strong></li>
+                <li><strong><a href="https://www.jsdelivr.com" target="_blank" rel="noopener">JSDelivr</a></strong></li>
+                <li><strong><a href="https://hitokoto.cn/" target="_blank" rel="noopener">Hitokoto</a></strong></li>
+                <li><strong><a href="https://valine.js.org/" target="_blank" rel="noopener">Valine</a></strong></li>
+                <li><strong><a href="https://hexo.io/" target="_blank" rel="noopener">hexo</a></strong></li>
+                <li><strong><a href="https://github.com/jaredly/hexo-admin" target="_blank" rel="noopener">Hexo-admin</a></strong></li>
+                <li><strong><a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">Hexo-abbrlink</a></strong></li>
+                <li><strong><a href="https://github.com/MikeCoder/hexo-blog-encrypt" target="_blank" rel="noopener">Hexo-blog-encrypt</a></strong></li>
+                <li><strong><a href="https://github.com/netcan/hexo-generator-index-pin-top" target="_blank" rel="noopener">Hexo-generator-index-pin-top</a></strong></li>
+                <li><strong><a href="https://github.com/MoePlayer/hexo-tag-dplayer" target="_blank" rel="noopener">Hexo-tag-dplayer</a></strong></li>
+                <li><strong><a href="https://github.com/killia15/ProgressCircle" target="_blank" rel="noopener">ProgressCircle</a></strong></li>
+                <li><strong><a href="https://github.com/bantikyan/icheck-material/" target="_blank" rel="noopener">Icheck-material</a></strong></li>
+                <li><strong><a href="https://github.com/mohammad-hammal/bootsrap4-buttons-extended" target="_blank" rel="noopener">bootsrap4-buttons-extended</a></strong></li>
+                <li><strong><a href="https://github.com/vinceying/Hexo-Action-TencentCloudBase" target="_blank" rel="noopener">Hexo-Action-TencentCloudBase</a></strong></li>
+            </div>
+            <div class="ah-tab-content">
+                <li>网站内容使用 CC BY-SA 3.0 协议，除特别标注外，均可注明出处转载。Fluid 使用 MIT 协议，我会遵守相关协议。网站图片部分来源于网络，如有侵权，非常抱歉，请通过上方电子邮件按钮联系我，收到后我将尽快删除。</li>
+            </div>
+            <div class="ah-tab-content">
+                <strong>以下为本站的节点信息</strong>
+                <h2> </h2>
+                <li><strong><a href="https://netlify.vince.pub/" target="_blank" rel="noopener">Netlify</a></strong></li>
+                <li><strong><a href="https://gh.vince.pub/" target="_blank" rel="noopener">Github</a></strong></li>
+                <li><strong><a href="https://coding.vince.pub/" target="_blank" rel="noopener">Coding</a></strong></li>
+                <li><strong><a href="https://vercel.vince.pub/" target="_blank" rel="noopener">Vercel</a></strong></li>
+            </div>
+            <div class="ah-tab-content">
+                <iframe src="https://i.vince.pub/" width="100%" height="500" name="topFrame" scrolling="yes" noresize="noresize" frameborder="0" id="topFrame"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.vince.pub/blog-file/js/horizontalmenu.js"></script>
+    <script>
+        $(function() {
+            $('.ah-tab-wrapper').horizontalmenu({
+                itemClick: function(item) {
+                    $('.ah-tab-content-wrapper .ah-tab-content').removeAttr('data-ah-tab-active');
+                    $('.ah-tab-content-wrapper .ah-tab-content:eq(' + $(item).index() + ')').attr('data-ah-tab-active', 'true');
+                    return false; //if this finction return true then will be executed http request
+                }
+            });
+        });
+    </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+    <div class="text-center py-3">
+
+        <div class="about-icons">
+            <a href="https://github.com/vinceying/" target="_blank" rel="noopener" class="">
+                <i class="iconfont icon-git" aria-hidden="true"></i>
+            </a>
+
+            <div><br>
+                <p>由<a href="https://hexo.io" target="_blank" rel="nofollow noopener"> Hexo </a>强力驱动 | 使用
+                    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> Fluid </a> 作为主题 | 基于<a href="https://cloud.tencent.com/product/tcb?from=12334" target="_blank" rel="nofollow noopener"> CloudBase </a>静态托管服务
+                    <a href="javascript:;" class="qr-trigger">
+                        <a href="https://cloud.tencent.com/product/tcb?from=12334" class="qr-trigger" target="_blank" rel="nofollow noopener"><i class="iconfont icon-ziyuan" aria-hidden="true"></i>
+                  <img class="qr-img" src="https://cdn.vince.pub/blog-file/photo/tencent_cloudbase.png" srcset="/img/loading.gif" alt="qrcode" /></a>
+                    </a><br>
+                    <i class="iconfont icon-fenzhi" aria-hidden="true"></i>节点信息&nbsp&nbsp| <a target="_blank" rel="noopener" href="https://netlify.vince.pub/"><i class="iconfont icon-netlify" aria-hidden="true"> Netlify&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://gh.vince.pub/"><i class="iconfont icon-github" aria-hidden="true"> GitHub&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://coding.vince.pub/"><i class="iconfont icon-coding" aria-hidden="true"> Coding&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://vercel.vince.pub/"><i class="iconfont icon-sanjiaoxing" aria-hidden="true"> Vercel&nbsp</i></a><br><a href="https://i.vince.pub/about/#相关内容及信息"><i class="iconfont icon-zhuangtai" aria-hidden="true"> 状态&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://www.vince.pub/"><i class="iconfont icon-icon_wangye" aria-hidden="true"> 主站&nbsp</i></a><a target="_blank" rel="noopener" href="https://file.vince.pub"><i class="iconfont icon-wenjianjia" aria-hidden="true"> 下载</i></a>
+                    <br>
+                </p>
+                <p><i class="iconfont icon-qitalaji" aria-hidden="true"></i><a href="https://i.vince.pub/" target="_blank" rel="nofollow noopener">© 2020 Vince </a>
+                    <a href="https://i.vince.pub/" target="_blank" rel="nofollow noopener"></a> | <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">闽ICP备20006816号-1</a>
+                </p>
+            </div>
+            
+
+                
+
+                    
+        </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+  
+<script src="/js/demo.js"></script>
+<script src="https://cdn.vince.pub/blog-file/js/horizontalmenu.js"></script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "关于&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?7b15c27c537bee99d8a4405d874d459f";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

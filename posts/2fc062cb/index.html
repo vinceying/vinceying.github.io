@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.vince.pub/blog-file/photo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://cdn.vince.pub/blog-file/photo/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="分享教程心得体验">
+  <meta name="author" content="Vince">
+  <meta name="keywords" content="">
+  <title>常见静态网站托管平台使用及多节点部署方案 - Vince&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/atom-one-dark.min.css" />
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/demo.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1744971_dbtmro899q7.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/jquery.horizontalmenu.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/normalize.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/icheck-material.css">
+
+
+
+  <script  src="/js/utils.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Vince's Blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-icon_wangye"></i>
+                索引
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tags/">
+                    <i class="iconfont icon-tags-fill"></i>
+                    标签
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/">
+                    <i class="iconfont icon-archive-fill"></i>
+                    归档
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/">
+                    <i class="iconfont icon-category-fill"></i>
+                    分类
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/note/">
+                <i class="iconfont icon-clipboard"></i>
+                随笔
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/comment/">
+                <i class="iconfont icon-comments"></i>
+                留言
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-gongneng"></i>
+                更多
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://Cloud.vince.pub">
+                    <i class="iconfont icon-wenjianjia"></i>
+                    私有云
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://file.vince.pub/">
+                    <i class="iconfont icon-fenzhi"></i>
+                    文件
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/Fluid-Source-File/">
+                    <i class="iconfont icon-icon-test1"></i>
+                    Fluid 镜像站
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('https://cdn.vince.pub/blog-file/photo/6e9ba654bd5ddf2025ef8957990bae2a616c40b1.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-05-26 15:26">
+      2020年5月26日 下午
+    </time>
+  </div>
+
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      22
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <h2 id="前言"><a class="markdownIt-Anchor" href="# 前言"></a> 前言</h2>
+<p>对于 Hexo 来说，我们使用它来部署博客是因为无后端运维和高速渲染页面等优点。选择一个合适的托管平台对于博客来说十分重要，可以免费使用且稳定高速的平台是不存在的，我们总是需要做出妥协。我使用了 Github Pages、Coding Pages、Gitee Pages、Netlify 和 Vercel 来部署博客，以下为我的使用报告。</p>
+<h2 id="常见托管平台"><a class="markdownIt-Anchor" href="# 常见托管平台"></a> 常见托管平台</h2>
+<p><img src="https://cdn.vince.pub/blog-file/photo/2fc062cb2.svg" srcset="/img/loading.gif" alt="节点" /></p>
+<h3 id="github-pages"><a class="markdownIt-Anchor" href="#github-pages"></a> Github Pages</h3>
+<p><span class="label label-primary">免费 </span><span class="label label-success"> 扩展性强 </span><span class="label label-danger"> 无限制性</span></p>
+<p>使用体验：可以与仓库无缝对接，高效部署，但是没用设置国内节点，在国内访问速度较慢，作为一个海外节点还是非常不错的。相对而言，使用 jsdelivr 来加速网站相关文件可以满足基本使用。查看 Github Status，Pages 服务会出现偶尔挂掉的情况，但多数仓库文档、演示等都选择了 Github Pages 服务。</p>
+<p>使用及扩展：提供二级域名，支持域名绑定及免费 SSL 证书。网站内容与仓库保存一致，自动推送。通过使用 Github Actions 具有较强扩展性。</p>
+<h3 id="netlify"><a class="markdownIt-Anchor" href="#netlify"></a> Netlify</h3>
+<p><span class="label label-primary">免费 </span><span class="label label-success"> 扩展性强 </span><span class="label label-danger"> 无限制性</span></p>
+<p>使用体验：Netlify 的节点设置在海外，但 Netlify 的服务速度尚可，国内部分地区可以到达高速服务。在使用 CDN 的情况下，把网站部署在 Netlify 是可以比较好的选择。Vuejs 和 Hexo 的官网都部署在 Netlify 上，其稳定性可想而知。Netlify 虽然拥有付费功能，但是基本上我们需要使用到的服务都免费。</p>
+<p>使用及扩展：提供二级域名，支持域名绑定及免费 SSL 证书。Netlify 支持 Github 或者 Gitlab 等账号登录，如果仓库已经是静态网站文件，每次 Push 到仓库 Netlify 都会自动部署。支持 Build Command，源文件也可以通过提供的环境自动编译或渲染，类似于一款 CI，与 Github Pages 功能相近。</p>
+<h3 id="vercel"><a class="markdownIt-Anchor" href="#vercel"></a> Vercel</h3>
+<p><span class="label label-primary">免费 </span><span class="label label-success"> 扩展性强 </span><span class="label label-danger"> 无限制性</span></p>
+<p>使用体验：Vercel 的体验情况总体和 Netlify 相近，节点设置在海外，访问速度尚可。前身是 <a target="_blank" rel="noopener" href="http://now.sh">now.sh</a>，作为一个高质量的静态托管平台，Vercel 的使用体验非常好，是一个可选的优秀平台。</p>
+<p>使用及扩展：提供二级域名，支持域名绑定及免费 SSL 证书。支持 Github 或者 Gitlab 等账号登录，如果仓库已经是静态网站文件，每次 Push 到仓库都会自动部署。Vercel 打出了 free forever 的口号，也就是说在非商用的情况下，个人可以永久免费使用。支持设置环境并执行相关命令，自动部署不在话下。</p>
+<h3 id="coding"><a class="markdownIt-Anchor" href="#coding"></a> Coding</h3>
+<p><span class="label label-primary">免费 </span><span class="label label-success"> 一般扩展性 </span><span class="label label-danger"> 限制性</span></p>
+<p>使用体验：Coding 是腾讯系的一个国内托管平台，对于人数较少的团体实行免费制度。服务器节点部署在国内，在国内使用访问速度较快。也是国内开放程度比较高的一个代码托管平台了，静态网站功能 Coding 最近改版了一下，相对于之前来说更稳定了一些。</p>
+<p>使用及扩展：提供二级域名，支持域名绑定及免费 SSL 证书。基于 Kubernetes 的持续部署，可以人我们体验到与 DevOps 体系紧密结合的持续部署能力。持续中提供静态网站托管，但是静态网站托管需要实名和绑定手机号。</p>
+<h3 id="gitee"><a class="markdownIt-Anchor" href="#gitee"></a> Gitee</h3>
+<p><span class="label label-primary">免费（国内限制）</span><span class="label label-success">扩展性较低 </span><span class="label label-danger"> 限制性强</span></p>
+<p>使用体验：Gitee 是一个国内托管平台，对比 coding 来说较为封闭。静态托管功能上拥有较大限制，且无法自动部署，功能残缺。</p>
+<p>使用及扩展：提供二级域名，非付费版不支持自动部署、域名绑定及免费 SSL 证书。如果强制使用 https，可能会造成样式文件失效等问题。</p>
+<h3 id="tcb"><a class="markdownIt-Anchor" href="#tcb"></a> TCB</h3>
+<p><span class="label label-primary">付费 </span><span class="label label-success"> 扩展性高 </span><span class="label label-danger"> 一般限制性</span></p>
+<p>使用体验：TCB(Tencent CloudBase）采用 serverless 架构，提供静态托管服务。我的主站就是使用 TCB，相对而言因为付费了，所以效果较好，在全国各地有 CDN 节点，目前使用是因为腾讯的赞助计划，如果赞助计划失效了，价格过高可能会考虑切换平台。空间较大，流量较多，已经充当 CDN 使用了。</p>
+<p>使用及扩展：提供二级域名，支持自动部署及 免费 SSL 证书，但是 SSL 证书申请可能需要备案。扩展性较强，可以使用 CLI 工具或者 Tencent CloudBase Github Action 来部署。</p>
+<h2 id="多节点部署方案"><a class="markdownIt-Anchor" href="# 多节点部署方案"></a> 多节点部署方案</h2>
+<p><img src="https://cdn.vince.pub/blog-file/photo/2fc062cb1.png" srcset="/img/loading.gif" alt="" /></p>
+<h3 id="几个仓库"><a class="markdownIt-Anchor" href="# 几个仓库"></a> 几个仓库</h3>
+<h4 id="hexo- 源码仓库"><a class="markdownIt-Anchor" href="#hexo- 源码仓库"></a> Hexo 源码仓库</h4>
+<p>从图中可以看到使用了 <code>Blog-Source</code> 这个仓库为 Hexo 源码仓库，这个仓库有一个使用了两个 Github Actions，一个用来渲染博客文件并推送到 TCB 静态托管平台，一个用来渲染博客文件推送到各个 Git 仓库，理论上一个 Action 也可以完成这些任务，但是便于管理我选择了两个 Action。</p>
+<p>推送至各个 Git 仓库</p>
+<div class="hljs"><pre><code class="hljs yaml"><span class="hljs-attr">name:</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">to</span> <span class="hljs-string">Repo(Github,</span> <span class="hljs-string">Coding,</span> <span class="hljs-string">Gitee)</span>
+<span class="hljs-attr">on:</span> [<span class="hljs-string">push</span>]
+<span class="hljs-attr">jobs:</span>
+  <span class="hljs-attr">build:</span>
+    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span>
+    <span class="hljs-attr">env:</span> 
+      <span class="hljs-attr">hTZ:</span> <span class="hljs-string">Asia/Shanghai</span>
+    <span class="hljs-attr">steps:</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Checkout</span>
+      <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v2</span>
+      <span class="hljs-attr">with:</span>
+        <span class="hljs-attr">ref:</span> <span class="hljs-string">master</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Update</span> <span class="hljs-string">Submodule</span>
+      <span class="hljs-attr">run:</span> <span class="hljs-string">|</span>
+        <span class="hljs-string">git</span> <span class="hljs-string">submodule</span> <span class="hljs-string">init</span>
+        <span class="hljs-string">git</span> <span class="hljs-string">submodule</span> <span class="hljs-string">update</span> <span class="hljs-string">--remote</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Setup</span> <span class="hljs-string">Node</span>
+      <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/setup-node@v1</span>
+      <span class="hljs-attr">with:</span>
+        <span class="hljs-attr">node-version:</span> <span class="hljs-string">&quot;10.x&quot;</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Hexo</span> <span class="hljs-string">Generate</span>
+      <span class="hljs-attr">run:</span> <span class="hljs-string">|</span>
+        <span class="hljs-string">rm</span> <span class="hljs-string">-f</span> <span class="hljs-string">.yarnclean</span>
+        <span class="hljs-string">yarn</span> <span class="hljs-string">--frozen-lockfile</span> <span class="hljs-string">--ignore-engines</span> <span class="hljs-string">--ignore-optional</span> <span class="hljs-string">--non-interactive</span> <span class="hljs-string">--silent</span> <span class="hljs-string">--ignore-scripts</span> <span class="hljs-string">--production=false</span>
+        <span class="hljs-string">rm</span> <span class="hljs-string">-rf</span> <span class="hljs-string">./public</span>
+        <span class="hljs-string">yarn</span> <span class="hljs-string">run</span> <span class="hljs-string">hexo</span> <span class="hljs-string">clean</span>
+        <span class="hljs-string">yarn</span> <span class="hljs-string">run</span> <span class="hljs-string">hexo</span> <span class="hljs-string">generate</span>
+    <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Hexo</span> <span class="hljs-string">Deploy</span>
+      <span class="hljs-attr">env:</span>
+        <span class="hljs-attr">SSH_PRIVATE:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">secrets.SSH_PRIVATE</span> <span class="hljs-string">&#125;&#125;</span>
+        <span class="hljs-attr">GIT_NAME:</span> <span class="hljs-string">vinceying</span>
+        <span class="hljs-attr">GIT_EMAIL:</span> <span class="hljs-string">admin@vicne.pub</span>
+      <span class="hljs-attr">run:</span> <span class="hljs-string">|</span>
+        <span class="hljs-string">mkdir</span> <span class="hljs-string">-p</span> <span class="hljs-string">~/.ssh/</span>
+        <span class="hljs-string">echo</span> <span class="hljs-string">&quot;$SSH_PRIVATE&quot;</span> <span class="hljs-string">|</span> <span class="hljs-string">tr</span> <span class="hljs-string">-d</span> <span class="hljs-string">&#x27;\r&#x27;</span> <span class="hljs-string">&gt;</span> <span class="hljs-string">~/.ssh/id_rsa</span>
+        <span class="hljs-string">chmod</span> <span class="hljs-number">600</span> <span class="hljs-string">~/.ssh/id_rsa</span>
+        <span class="hljs-string">ssh-keyscan</span> <span class="hljs-string">e.coding.net</span> <span class="hljs-string">&gt;&gt;</span> <span class="hljs-string">~/.ssh/known_hosts</span>
+        <span class="hljs-string">ssh-keyscan</span> <span class="hljs-string">github.com</span> <span class="hljs-string">&gt;&gt;</span> <span class="hljs-string">~/.ssh/known_hosts</span>
+        <span class="hljs-string">ssh-keyscan</span> <span class="hljs-string">gitee.com</span> <span class="hljs-string">&gt;&gt;</span> <span class="hljs-string">~/.ssh/known_hosts</span>
+        <span class="hljs-string">git</span> <span class="hljs-string">config</span> <span class="hljs-string">--global</span> <span class="hljs-string">user.name</span> <span class="hljs-string">&quot;$GIT_NAME&quot;</span>
+        <span class="hljs-string">git</span> <span class="hljs-string">config</span> <span class="hljs-string">--global</span> <span class="hljs-string">user.email</span> <span class="hljs-string">&quot;$GIT_EMAIL&quot;</span>
+        <span class="hljs-string">yarn</span> <span class="hljs-string">run</span> <span class="hljs-string">hexo</span> <span class="hljs-string">deploy</span></code></pre></div>
+<p>推送至 TCB</p>
+<div class="hljs"><pre><code class="hljs yaml"><span class="hljs-attr">name:</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">to</span> <span class="hljs-string">Tencent</span> <span class="hljs-string">CloudBase</span>
+<span class="hljs-attr">on:</span> <span class="hljs-string">push</span>
+<span class="hljs-attr">jobs:</span>
+  <span class="hljs-attr">build:</span>
+    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span>
+    <span class="hljs-attr">env:</span>
+      <span class="hljs-attr">TZ:</span> <span class="hljs-string">Asia/Shanghai</span>
+    <span class="hljs-attr">name:</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">Hexo</span> <span class="hljs-string">Souce</span> <span class="hljs-string">Repo</span> <span class="hljs-string">to</span> <span class="hljs-string">Tencent</span> <span class="hljs-string">CloudBase</span>
+    <span class="hljs-attr">steps:</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Checkout</span>
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v2</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Setup</span> <span class="hljs-string">Node</span>
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/setup-node@v1</span>
+        <span class="hljs-attr">with:</span>
+          <span class="hljs-attr">node-version:</span> <span class="hljs-string">&#x27;10.x&#x27;</span>
+      <span class="hljs-comment"># NPM 环境及 Hexo 部署</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">NPM</span>
+        <span class="hljs-attr">run:</span> <span class="hljs-string">npm</span> <span class="hljs-string">install</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Clean</span>
+        <span class="hljs-attr">run:</span> <span class="hljs-string">./node_modules/.bin/hexo</span> <span class="hljs-string">clean</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Generate</span>
+        <span class="hljs-attr">run:</span> <span class="hljs-string">./node_modules/.bin/hexo</span> <span class="hljs-string">generate</span>
+      <span class="hljs-comment"># Deploy static to Tencent CloudBase</span>
+      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">Deploy</span> <span class="hljs-string">static</span> <span class="hljs-string">to</span> <span class="hljs-string">Tencent</span> <span class="hljs-string">CloudBase</span>
+        <span class="hljs-attr">id:</span> <span class="hljs-string">deployStatic</span>
+        <span class="hljs-attr">uses:</span> <span class="hljs-string">TencentCloudBase/cloudbase-action@v1.1.1</span>
+        <span class="hljs-attr">with:</span>
+          <span class="hljs-attr">secretId:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">secrets.SECRET_ID</span> <span class="hljs-string">&#125;&#125;</span>
+          <span class="hljs-attr">secretKey:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">secrets.SECRET_KEY</span> <span class="hljs-string">&#125;&#125;</span>
+          <span class="hljs-attr">envId:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">secrets.ENV_ID</span> <span class="hljs-string">&#125;&#125;</span>
+          <span class="hljs-attr">staticSrcPath:</span> <span class="hljs-string">public</span></code></pre></div>
+<h4 id="github- 博客页面仓库"><a class="markdownIt-Anchor" href="#github- 博客页面仓库"></a> Github 博客页面仓库</h4>
+<p>这个作为使用 Github Pages 服务的仓库，同时在 Netlify 和 Vercel 的选择为源仓库，在每次推送至本仓库时，Netlify 和 Vercel 都会自动部署新文件。</p>
+<h4 id="cdn- 文件仓库"><a class="markdownIt-Anchor" href="#cdn- 文件仓库"></a> CDN 文件仓库</h4>
+<p>这个仓库作为管理和存放一些需要推送到 CDN 的文件，比如 css 文件、图片和视频等，首先是为了便于管理及通过 Github Actions 推送 到 TCB，其次是为了使用 Jsdelivr CDN 服务作为备用 CDN。</p>
+<h3 id="方案优点"><a class="markdownIt-Anchor" href="# 方案优点"></a> 方案优点</h3>
+<ul>
+<li>高效自动化，利用 Github Actions, 每次只要 Push 到 <code>Blog-Souce</code>和 <code>Blog-file</code> 仓库就可以全仓库和全节点同步。</li>
+<li>便于管理文件，当主 CDN 失效后，直接替换 CDN 地址链接即可完成启用备用 CDN，且备份了文件。</li>
+<li>多设备管理，当切换设备后，直接在不安装环境的情况下直接 Clone 即可管理博客，但调试方面还是需要安装环境。特别是在 Github 的云端 IDE-Codespace 正式发布后，可以完全通过仓库管理博客。</li>
+</ul>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/">网站相关</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%88%86%E4%BA%AB/">分享</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/posts/34335acc/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">🚧 旧版博客停止维护，我们新版见</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/posts/14677127/">
+                        <span class="hidden-mobile">搭配 Fluid 如何优雅的写一篇文章</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+    <div class="text-center py-3">
+
+        <div class="about-icons">
+            <a href="https://github.com/vinceying/" target="_blank" rel="noopener" class="">
+                <i class="iconfont icon-git" aria-hidden="true"></i>
+            </a>
+
+            <div><br>
+                <p>由<a href="https://hexo.io" target="_blank" rel="nofollow noopener"> Hexo </a>强力驱动 | 使用
+                    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> Fluid </a> 作为主题 | 基于<a href="https://cloud.tencent.com/product/tcb?from=12334" target="_blank" rel="nofollow noopener"> CloudBase </a>静态托管服务
+                    <a href="javascript:;" class="qr-trigger">
+                        <a href="https://cloud.tencent.com/product/tcb?from=12334" class="qr-trigger" target="_blank" rel="nofollow noopener"><i class="iconfont icon-ziyuan" aria-hidden="true"></i>
+                  <img class="qr-img" src="https://cdn.vince.pub/blog-file/photo/tencent_cloudbase.png" srcset="/img/loading.gif" alt="qrcode" /></a>
+                    </a><br>
+                    <i class="iconfont icon-fenzhi" aria-hidden="true"></i>节点信息&nbsp&nbsp| <a target="_blank" rel="noopener" href="https://netlify.vince.pub/"><i class="iconfont icon-netlify" aria-hidden="true"> Netlify&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://gh.vince.pub/"><i class="iconfont icon-github" aria-hidden="true"> GitHub&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://coding.vince.pub/"><i class="iconfont icon-coding" aria-hidden="true"> Coding&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://vercel.vince.pub/"><i class="iconfont icon-sanjiaoxing" aria-hidden="true"> Vercel&nbsp</i></a><br><a href="https://i.vince.pub/about/#相关内容及信息"><i class="iconfont icon-zhuangtai" aria-hidden="true"> 状态&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://www.vince.pub/"><i class="iconfont icon-icon_wangye" aria-hidden="true"> 主站&nbsp</i></a><a target="_blank" rel="noopener" href="https://file.vince.pub"><i class="iconfont icon-wenjianjia" aria-hidden="true"> 下载</i></a>
+                    <br>
+                </p>
+                <p><i class="iconfont icon-qitalaji" aria-hidden="true"></i><a href="https://i.vince.pub/" target="_blank" rel="nofollow noopener">© 2020 Vince </a>
+                    <a href="https://i.vince.pub/" target="_blank" rel="nofollow noopener"></a> | <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">闽ICP备20006816号-1</a>
+                </p>
+            </div>
+            
+
+                
+
+                    
+        </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+  
+<script src="/js/demo.js"></script>
+<script src="https://cdn.vince.pub/blog-file/js/horizontalmenu.js"></script>
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: 'article.markdown-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "常见静态网站托管平台使用及多节点部署方案&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?7b15c27c537bee99d8a4405d874d459f";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

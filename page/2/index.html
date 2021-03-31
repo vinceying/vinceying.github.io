@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.vince.pub/blog-file/photo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://cdn.vince.pub/blog-file/photo/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="分享教程心得体验">
+  <meta name="author" content="Vince">
+  <meta name="keywords" content="">
+  <title>Vince&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/demo.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1744971_dbtmro899q7.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/jquery.horizontalmenu.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/normalize.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/icheck-material.css">
+
+
+
+  <script  src="/js/utils.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 100vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Vince's Blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-icon_wangye"></i>
+                索引
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tags/">
+                    <i class="iconfont icon-tags-fill"></i>
+                    标签
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/">
+                    <i class="iconfont icon-archive-fill"></i>
+                    归档
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/">
+                    <i class="iconfont icon-category-fill"></i>
+                    分类
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/note/">
+                <i class="iconfont icon-clipboard"></i>
+                随笔
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/comment/">
+                <i class="iconfont icon-comments"></i>
+                留言
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-gongneng"></i>
+                更多
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://Cloud.vince.pub">
+                    <i class="iconfont icon-wenjianjia"></i>
+                    私有云
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://file.vince.pub/">
+                    <i class="iconfont icon-fenzhi"></i>
+                    文件
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/Fluid-Source-File/">
+                    <i class="iconfont icon-icon-test1"></i>
+                    Fluid 镜像站
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('https://i.vince.pub/blog-file/photo/site-0625/Appearance.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-md">
+        <div class="py-5" id="board"
+          style=margin-top:0>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/posts/11aa152/" target="_self">
+          <img src="https://cdn.vince.pub/blog-file/photo/wallpaper.jpg" srcset="/img/loading.gif" alt="使用很久的两个壁纸网站推荐">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a class="index-header" href="/posts/11aa152/">使用很久的两个壁纸网站推荐</a>
+
+      <a href="/posts/11aa152/" class="index-excerpt">
+        
+        
+          
+        
+        <div>自用了很久的两个宝藏壁纸网站推荐。</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-04-17
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E6%95%99%E7%A8%8B%E5%88%86%E4%BA%AB/">教程分享</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E5%88%86%E4%BA%AB/">分享</a>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/posts/471286c7/" target="_self">
+          <img src="https://cdn.vince.pub/blog-file/photo/site-0625/index.png" srcset="/img/loading.gif" alt="在 Fluid 使用更多图标的详细过程">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a class="index-header" href="/posts/471286c7/">在 Fluid 使用更多图标的详细过程</a>
+
+      <a href="/posts/471286c7/" class="index-excerpt">
+        
+        
+          
+        
+        <div>Fluid 在2020/4/5之前的版本使用的图标库是 FontAwesome，在之后的版本使用 Iconfont。另外内容已经 PR 到文档中。</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-04-14
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E6%95%99%E7%A8%8B%E5%88%86%E4%BA%AB/">教程分享</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/posts/738196d8/" target="_self">
+          <img src="https://cdn.vince.pub/blog-file/photo/android.png" srcset="/img/loading.gif" alt="关于智能手表操作系统的一些浅见">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a class="index-header" href="/posts/738196d8/">关于智能手表操作系统的一些浅见</a>
+
+      <a href="/posts/738196d8/" class="index-excerpt">
+        
+        
+          
+        
+        <div>先说结论，如果没有大量的用户基数和对应用开发的扶持，我认为这种独立基于 Android 开发系统的模式，不是很可观。（仅代表个人观点，回答如有错误欢迎指出)</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-04-07
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A/">心得体会</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BD%93%E9%AA%8C/">体验</a>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/posts/1b61a3e1/" target="_self">
+          <img src="https://cdn.vince.pub/blog-file/photo/shanghai.jpg" srcset="/img/loading.gif" alt="个人作品，演示文稿关于我的家乡">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a class="index-header" href="/posts/1b61a3e1/">个人作品，演示文稿关于我的家乡</a>
+
+      <a href="/posts/1b61a3e1/" class="index-excerpt">
+        
+        
+          
+        
+        <div>由于 Onedrive 因为某些原因无法访问，使用无法调用 Office Online 来播放 PPT，故转换为图片展示</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-04-06
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E8%AE%BE%E8%AE%A1%E4%BD%9C%E5%93%81/">设计作品</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/">个人作品</a>
+            
+              <a href="/tags/%E8%AE%BE%E8%AE%A1/">设计</a>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/posts/2667741f/" target="_self">
+          <img src="https://cdn.vince.pub/blog-file/photo/2667741f1.jpg" srcset="/img/loading.gif" alt="jsDelivr-CDN 相关配置">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a class="index-header" href="/posts/2667741f/">jsDelivr-CDN 相关配置</a>
+
+      <a href="/posts/2667741f/" class="index-excerpt">
+        
+        
+          
+        
+        <div>使用了 Github 搭建了一个新的项目，用作相关文件处理，主要用于图床服务，使用 jsDelivr CDN 来加载</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-04-06
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/">网站相关</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E8%AF%B4%E6%98%8E/">说明</a>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/posts/2981eaf6/" target="_self">
+          <img src="https://cdn.vince.pub/blog-file/photo/design.png" srcset="/img/loading.gif" alt="个人业余海报设计作品">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a class="index-header" href="/posts/2981eaf6/">个人业余海报设计作品</a>
+
+      <a href="/posts/2981eaf6/" class="index-excerpt">
+        
+        
+          
+        
+        <div>以下是之前帮社团设计的海报，纯业余选手，放到作品集里。图片很大，加载可能会有些慢</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-04-05
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E8%AE%BE%E8%AE%A1%E4%BD%9C%E5%93%81/">设计作品</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%B8%AA%E4%BA%BA%E4%BD%9C%E5%93%81/">个人作品</a>
+            
+              <a href="/tags/%E8%AE%BE%E8%AE%A1/">设计</a>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/posts/be772caf/" target="_self">
+          <img src="https://cdn.vince.pub/blog-file/photo/bg.jpg" srcset="/img/loading.gif" alt="个人免费建站，使用 Cloud Studio 建立个人博客">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a class="index-header" href="/posts/be772caf/">个人免费建站，使用 Cloud Studio 建立个人博客</a>
+
+      <a href="/posts/be772caf/" class="index-excerpt">
+        
+        
+          
+        
+        <div>由于文字内容过多，不便发布在这里，文章为原创，直接给出知乎链接，以后的文章会更新到本站（由于 Cloud Studio 已经升级，该方法可能已经失效）</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-04-05
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E6%95%99%E7%A8%8B%E5%88%86%E4%BA%AB/">教程分享</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/posts/55c107f9/" target="_self">
+          <img src="https://cdn.vince.pub/blog-file/photo/chromebook.jpg" srcset="/img/loading.gif" alt="Chrome OS 体验与常用环境">
+        </a>
+      </div>
+    
+    <div class="col-12 col-md-8 mx-auto index-info">
+      <a class="index-header" href="/posts/55c107f9/">Chrome OS 体验与常用环境</a>
+
+      <a href="/posts/55c107f9/" class="index-excerpt">
+        
+        
+          
+        
+        <div>由于文字内容过多，不便发布在这里，文章为原创，直接给出知乎链接，以后的文章会更新到本站</div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>&nbsp;2020-04-05
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E5%BF%83%E5%BE%97%E4%BD%93%E4%BC%9A/">心得体会</a>
+            
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/%E4%BD%93%E9%AA%8C/">体验</a>
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </span>
+  </nav>
+  
+  <script>
+    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
+      ele.href += '#board';
+    }
+  </script>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+    <div class="text-center py-3">
+
+        <div class="about-icons">
+            <a href="https://github.com/vinceying/" target="_blank" rel="noopener" class="">
+                <i class="iconfont icon-git" aria-hidden="true"></i>
+            </a>
+
+            <div><br>
+                <p>由<a href="https://hexo.io" target="_blank" rel="nofollow noopener"> Hexo </a>强力驱动 | 使用
+                    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> Fluid </a> 作为主题 | 基于<a href="https://cloud.tencent.com/product/tcb?from=12334" target="_blank" rel="nofollow noopener"> CloudBase </a>静态托管服务
+                    <a href="javascript:;" class="qr-trigger">
+                        <a href="https://cloud.tencent.com/product/tcb?from=12334" class="qr-trigger" target="_blank" rel="nofollow noopener"><i class="iconfont icon-ziyuan" aria-hidden="true"></i>
+                  <img class="qr-img" src="https://cdn.vince.pub/blog-file/photo/tencent_cloudbase.png" srcset="/img/loading.gif" alt="qrcode" /></a>
+                    </a><br>
+                    <i class="iconfont icon-fenzhi" aria-hidden="true"></i>节点信息&nbsp&nbsp| <a target="_blank" rel="noopener" href="https://netlify.vince.pub/"><i class="iconfont icon-netlify" aria-hidden="true"> Netlify&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://gh.vince.pub/"><i class="iconfont icon-github" aria-hidden="true"> GitHub&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://coding.vince.pub/"><i class="iconfont icon-coding" aria-hidden="true"> Coding&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://vercel.vince.pub/"><i class="iconfont icon-sanjiaoxing" aria-hidden="true"> Vercel&nbsp</i></a><br><a href="https://i.vince.pub/about/#相关内容及信息"><i class="iconfont icon-zhuangtai" aria-hidden="true"> 状态&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://www.vince.pub/"><i class="iconfont icon-icon_wangye" aria-hidden="true"> 主站&nbsp</i></a><a target="_blank" rel="noopener" href="https://file.vince.pub"><i class="iconfont icon-wenjianjia" aria-hidden="true"> 下载</i></a>
+                    <br>
+                </p>
+                <p><i class="iconfont icon-qitalaji" aria-hidden="true"></i><a href="https://i.vince.pub/" target="_blank" rel="nofollow noopener">© 2020 Vince </a>
+                    <a href="https://i.vince.pub/" target="_blank" rel="nofollow noopener"></a> | <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">闽ICP备20006816号-1</a>
+                </p>
+            </div>
+            
+
+                
+
+                    
+        </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+  
+<script src="/js/demo.js"></script>
+<script src="https://cdn.vince.pub/blog-file/js/horizontalmenu.js"></script>
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "对这个世界充满好奇心&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?7b15c27c537bee99d8a4405d874d459f";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

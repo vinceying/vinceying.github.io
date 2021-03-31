@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.vince.pub/blog-file/photo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://cdn.vince.pub/blog-file/photo/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="分享教程心得体验">
+  <meta name="author" content="Vince">
+  <meta name="keywords" content="">
+  <title>博客常用的插件和拓展 - Vince&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/atom-one-dark.min.css" />
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/demo.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1744971_dbtmro899q7.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/jquery.horizontalmenu.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/normalize.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/icheck-material.css">
+
+
+
+  <script  src="/js/utils.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Vince's Blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-icon_wangye"></i>
+                索引
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tags/">
+                    <i class="iconfont icon-tags-fill"></i>
+                    标签
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/">
+                    <i class="iconfont icon-archive-fill"></i>
+                    归档
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/">
+                    <i class="iconfont icon-category-fill"></i>
+                    分类
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/note/">
+                <i class="iconfont icon-clipboard"></i>
+                随笔
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/comment/">
+                <i class="iconfont icon-comments"></i>
+                留言
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-gongneng"></i>
+                更多
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://Cloud.vince.pub">
+                    <i class="iconfont icon-wenjianjia"></i>
+                    私有云
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://file.vince.pub/">
+                    <i class="iconfont icon-fenzhi"></i>
+                    文件
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/Fluid-Source-File/">
+                    <i class="iconfont icon-icon-test1"></i>
+                    Fluid 镜像站
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('https://cdn.vince.pub/blog-file/photo/1727ba1bbbff0b4b3f1c8714f983014d0deef37a.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-06-30 19:52">
+      2020年6月30日 晚上
+    </time>
+  </div>
+
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      5.5k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      100
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <h2 id="前言"><a class="markdownIt-Anchor" href="# 前言"></a> 前言</h2>
+<p>这里分享本站使用的插件或者扩展，使用插件部分需要加载静态资源，<strong>可能会网站加载速度变慢</strong>，请根据情况使用。黑暗模式可能没有适配，请自行修改样式文件来适配。</p>
+<h2 id="选项页"><a class="markdownIt-Anchor" href="# 选项页"></a> 选项页</h2>
+<h3 id="描述"><a class="markdownIt-Anchor" href="# 描述"></a> 描述</h3>
+<p>在使用如果有选项页或者导航的需求，可以使用选项页。Fluid 使用了 Bootstrap 和 Jquery 框架，这项可能直接使用 Bootstrap 的布局，不需要引入相关静态资源。</p>
+<h3 id="代码和使用"><a class="markdownIt-Anchor" href="# 代码和使用"></a> 代码和使用</h3>
+<div class="hljs"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-4 col-sm-6 jQueryEqualHeight3&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-img-top&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://i.vince.pub/blog-file/photo/note/9b323e9549d67ec8a75fbc14b9cd0e237ccce8de.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Card image cap&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-body&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-title&quot;</span>&gt;</span>🚀 随便说说<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-text&quot;</span>&gt;</span>基于 Artitalk，这里是我的碎碎念，日常一些吐槽和感慨也会放到这个垃圾桶里。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/note/say&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span>进入页面<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-4 col-sm-6 jQueryEqualHeight3&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-img-top&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://i.vince.pub/blog-file/photo/note/debug.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Card image cap&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-body&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-title&quot;</span>&gt;</span>🚧 更新计划<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-text&quot;</span>&gt;</span>这里记录一些博客、主站和一些相关网站的更新计划、内容和记录一些学习的知识。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/note/update&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span>进入页面<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-4 col-sm-6 jQueryEqualHeight3&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-img-top&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://i.vince.pub/blog-file/photo/note/bed6d90f1b2f62b817e17029a7261311a23231ec.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Card image cap&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-body&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-title&quot;</span>&gt;</span>📄 常用内容<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;card-text&quot;</span>&gt;</span>这里记录一些网站使用到的插件的使用说明，和一些我经常使用到的链接。<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/note/more&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-primary&quot;</span>&gt;</span>进入页面<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
+<p>在 HTML 或者 MD 文件中添加代码即可，具体效果查看演示。</p>
+<h3 id="演示"><a class="markdownIt-Anchor" href="# 演示"></a> 演示</h3>
+<iframe src="https://i.vince.pub/note" width="100%" height="400" name="topFrame" scrolling="yes"  noresize="noresize" frameborder="0" id="topFrame"></iframe>
+<h2 id="介绍卡片"><a class="markdownIt-Anchor" href="# 介绍卡片"></a> 介绍卡片</h2>
+<h3 id="描述 -2"><a class="markdownIt-Anchor" href="# 描述 -2"></a> 描述</h3>
+<p>一个超酷的介绍卡片，具体来源为 <a target="_blank" rel="noopener" href="http://www.htmleaf.com/">jQuery 之家</a>，这个卡片应该来源某个国外网站。我修改了样式文件，在移动端不会显示以及和主题样式文件的冲突。</p>
+<h3 id="代码与使用"><a class="markdownIt-Anchor" href="# 代码与使用"></a> 代码与使用</h3>
+<h4 id="使用代码"><a class="markdownIt-Anchor" href="# 使用代码"></a> 使用代码</h4>
+<div class="hljs"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/gh/vinceying/blog-file@master/share/card/linkscard.css&quot;</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;linkscard&quot;</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;postcard green&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;additional&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;user-card&quot;</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;level center&quot;</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;iconfont icon-youhailaji-feijiuxiaojiadian&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span> Vince&#x27;s Blog
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;points center&quot;</span>&gt;</span>
+                     16 POSTS
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.vince.pub/blog-file/photo/i.jpg&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;110&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;110&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;img&quot;</span> <span class="hljs-attr">aria-labelledby</span>=<span class="hljs-string">&quot;title desc&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;center&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;more-info&quot;</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Vince Ying<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;coords&quot;</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Bad code<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Joined Apr 2020<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;coords&quot;</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Just do it later<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Fujian, China<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;stats&quot;</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;title&quot;</span>&gt;</span>友链<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;value&quot;</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;title&quot;</span>&gt;</span>文章<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;value&quot;</span>&gt;</span>16<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;title&quot;</span>&gt;</span>懒惰<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;value infinity&quot;</span>&gt;</span>∞<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;title&quot;</span>&gt;</span>学习<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;value infinity&quot;</span>&gt;</span>∞<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;general&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Vince<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>欢迎你访问本站，感谢关注，如果你想要交换友链，请通过以下方式。佛系网站，访客也不多，主要为了记录一些东西。
+             <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;more&quot;</span>&gt;</span>上次更新：2020/06/26<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
+<h4 id="css- 引入文件"><a class="markdownIt-Anchor" href="#css- 引入文件"></a> CSS 引入文件</h4>
+<div class="hljs"><pre><code class="hljs CSS"><span class="hljs-comment">/*---Links Card---*/</span>
+
+<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">767px</span>) &#123;
+    <span class="hljs-selector-class">.linkscard</span> &#123;
+        <span class="hljs-attribute">display</span>: none
+    &#125;
+&#125;
+
+<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">767px</span>) &#123;
+    <span class="hljs-selector-class">.linkscard</span> &#123;
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">500px</span>;
+    &#125;
+&#125;
+
+<span class="hljs-selector-class">.center</span> &#123;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+    -webkit-<span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translate</span>(-<span class="hljs-number">50%</span>, -<span class="hljs-number">50%</span>);
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> &#123;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">450px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">250px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">linear-gradient</span>(<span class="hljs-number">#f8f8f8</span>, <span class="hljs-number">#fff</span>);
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">8px</span> <span class="hljs-number">16px</span> -<span class="hljs-number">8px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.4</span>);
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">6px</span>;
+    <span class="hljs-attribute">overflow</span>: hidden;
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">1.5rem</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-tag">h1</span> &#123;
+    <span class="hljs-attribute">text-align</span>: center;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> &#123;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">150px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">linear-gradient</span>(<span class="hljs-number">#dE685E</span>, <span class="hljs-number">#EE786E</span>);
+    <span class="hljs-attribute">transition</span>: width <span class="hljs-number">0.4s</span>;
+    <span class="hljs-attribute">overflow</span>: hidden;
+    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">2</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span><span class="hljs-selector-class">.green</span> <span class="hljs-selector-class">.additional</span> &#123;
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">linear-gradient</span>(<span class="hljs-number">#92bCa6</span>, <span class="hljs-number">#A2CCB6</span>);
+&#125;
+
+<span class="hljs-selector-class">.postcard</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.additional</span> &#123;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span> <span class="hljs-number">5px</span> <span class="hljs-number">5px</span> <span class="hljs-number">0</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.user-card</span> &#123;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">150px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">float</span>: left;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.user-card</span><span class="hljs-selector-pseudo">::after</span> &#123;
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">10%</span>;
+    <span class="hljs-attribute">right</span>: -<span class="hljs-number">2px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">80%</span>;
+    <span class="hljs-attribute">border-left</span>: <span class="hljs-number">2px</span> solid <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.025</span>);
+    */
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.user-card</span> <span class="hljs-selector-class">.level</span>,
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.user-card</span> <span class="hljs-selector-class">.points</span> &#123;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">15%</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">text-transform</span>: uppercase;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.75em</span>;
+    <span class="hljs-attribute">font-weight</span>: bold;
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.15</span>);
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0.125rem</span> <span class="hljs-number">0.75rem</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">100px</span>;
+    <span class="hljs-attribute">white-space</span>: nowrap;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.user-card</span> <span class="hljs-selector-class">.points</span> &#123;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">85%</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.user-card</span> svg &#123;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.more-info</span> &#123;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
+    <span class="hljs-attribute">float</span>: left;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">150px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.more-info</span> <span class="hljs-selector-tag">h1</span> &#123;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span><span class="hljs-selector-class">.green</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.more-info</span> <span class="hljs-selector-tag">h1</span> &#123;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#224C36</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.coords</span> &#123;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-number">1rem</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1rem</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span><span class="hljs-selector-class">.green</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.coords</span> &#123;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#325C46</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.coords</span> <span class="hljs-selector-tag">span</span>+<span class="hljs-selector-tag">span</span> &#123;
+    <span class="hljs-attribute">float</span>: right;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.stats</span> &#123;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2rem</span>;
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">bottom</span>: <span class="hljs-number">1rem</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">1rem</span>;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">1rem</span>;
+    <span class="hljs-attribute">top</span>: auto;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#fff</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span><span class="hljs-selector-class">.green</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.stats</span> &#123;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#325C46</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.stats</span>&gt;<span class="hljs-selector-tag">div</span> &#123;
+    <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.stats</span> <span class="hljs-selector-tag">i</span> &#123;
+    <span class="hljs-attribute">display</span>: block;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.stats</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.title</span> &#123;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.75rem</span>;
+    <span class="hljs-attribute">font-weight</span>: bold;
+    <span class="hljs-attribute">text-transform</span>: uppercase;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.stats</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.value</span> &#123;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5rem</span>;
+    <span class="hljs-attribute">font-weight</span>: bold;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5rem</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.additional</span> <span class="hljs-selector-class">.stats</span> <span class="hljs-selector-tag">div</span><span class="hljs-selector-class">.value</span><span class="hljs-selector-class">.infinity</span> &#123;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2.5rem</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.general</span> &#123;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">box-sizing</span>: border-box;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">1rem</span>;
+    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">0</span>;
+&#125;
+
+<span class="hljs-selector-class">.postcard</span> <span class="hljs-selector-class">.general</span> <span class="hljs-selector-class">.more</span> &#123;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">bottom</span>: <span class="hljs-number">1rem</span>;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">1rem</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">0.9em</span>;
+&#125;
+</code></pre></div>
+<p>在想要的地方中添加代码即可，具体效果查看演示。</p>
+<h3 id="演示 -2"><a class="markdownIt-Anchor" href="# 演示 -2"></a> 演示</h3>
+<p>请使用 PC 端跳转到 <a href="https://i.vince.pub/links/"> 友情链接 </a> 查看。</p>
+<h3 id="cdn"><a class="markdownIt-Anchor" href="#cdn"></a> CDN</h3>
+<div class="hljs"><pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>cdn.jsdelivr.net<span class="hljs-regexp">/gh/</span>vinceying<span class="hljs-regexp">/blog-file@master/</span>share<span class="hljs-regexp">/card/</span>linkscard.css</code></pre></div>
+<h2 id="分页栏"><a class="markdownIt-Anchor" href="# 分页栏"></a> 分页栏</h2>
+<h3 id="描述 -3"><a class="markdownIt-Anchor" href="# 描述 -3"></a> 描述</h3>
+<p>来源 <a target="_blank" rel="noopener" href="https://github.com/romannovojilov/adaptive-horizontal-menu">GitHub</a>, 我觉得这个分页栏的格式和这个主题还不算太不搭配。</p>
+<h3 id="代码和使用 -2"><a class="markdownIt-Anchor" href="# 代码和使用 -2"></a> 代码和使用</h3>
+<h4 id="使用示例代码"><a class="markdownIt-Anchor" href="# 使用示例代码"></a> 使用示例代码</h4>
+<div class="hljs"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content&quot;</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ah-tab-wrapper&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ah-tab&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ah-tab-item&quot;</span> <span class="hljs-attr">data-ah-tab-active</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>更新日志及部署状态<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ah-tab-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>本站使用的一些服务<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ah-tab-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>相关版权<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ah-tab-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>本站节点信息<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ah-tab-item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>移动端页面预览<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ah-tab-content-wrapper&quot;</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ah-tab-content&quot;</span> <span class="hljs-attr">data-ah-tab-active</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.vince.pub/blog-file/photo/68747470733a2f2f6170692e6e65746c6966792e636f6d2f6170692f76312f6261646765732f33356661376434392d306333322d343766382d623839302d6365333235356336373364652f6465706c6f792d737461747573.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;badge1&quot;</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.vince.pub/blog-file/photo/badge1.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;badge1&quot;</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.vince.pub/blog-file/photo/badge2.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;badge2&quot;</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>网站整体建设开发（2020/4/4）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>网站插件部署（2020/4/5）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>网站关于页面完善（2020/4/5）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>一些错误更正（2020/4/6）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>jsdelivr 使用参考 （2020/4/6）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>友链页面 （2020/4/7）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>视频播放插件 （2020/4/7）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>关闭分类页，打开归档页面（2020/4/7）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>更换评论系统为 valine ，创建留言页面（2020/4/7）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>顶部任务栏图标（2020/4/8）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>中英文规范与博客版本更新（2020/4/10）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>加密插件（2020/4/10）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>统计服务及内容管理页面（2020/4/10）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>valine 邮箱提醒（2020/4/10）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>GitHub Actions 部署（2020/5/9)<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>更新 footer (2020/5/10)<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>移动一言与运行时间到关于页面(2020/5/10)<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>更换 CDN (2020/5/11)<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>整合关于页面（2020/5/21）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>引入 Icheck-material（2020/5/22）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>友链界面重新整合（2020/5/24）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>优化菜单选项及加入更多页面（2020/5/24）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>多节点部署（2020/5/26）<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ah-tab-content&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>以下为本站所使用程序及插件<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://github.com/fluid-dev/hexo-theme-fluid&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>Fluid<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://www.jsdelivr.com&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>JSDelivr<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://hitokoto.cn/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>Hitokoto<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://valine.js.org/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>Valine<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://hexo.io/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>hexo<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://github.com/jaredly/hexo-admin&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>Hexo-admin<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://github.com/rozbo/hexo-abbrlink&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>Hexo-abbrlink<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://github.com/MikeCoder/hexo-blog-encrypt&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>Hexo-blog-encrypt<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://github.com/netcan/hexo-generator-index-pin-top&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>Hexo-generator-index-pin-top<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://github.com/MoePlayer/hexo-tag-dplayer&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>Hexo-tag-dplayer<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://github.com/killia15/ProgressCircle&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>ProgressCircle<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://github.com/bantikyan/icheck-material/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>Icheck-material<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://github.com/mohammad-hammal/bootsrap4-buttons-extended&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>bootsrap4-buttons-extended<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://github.com/vinceying/Hexo-Action-TencentCloudBase&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>Hexo-Action-TencentCloudBase<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ah-tab-content&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>网站内容使用 CC BY-SA 3.0 协议，除特别标注外，均可注明出处转载。Fluid 使用 MIT 协议，我会遵守相关协议。网站图片部分来源于网络，如有侵权，非常抱歉，请通过上方电子邮件按钮联系我，收到后我将尽快删除。<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ah-tab-content&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>以下为本站的节点信息<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span> <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://netlify.vince.pub/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>Netlify<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://gh.vince.pub/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>Github<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://coding.vince.pub/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>Coding<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://vercel.vince.pub/&quot;</span> <span class="hljs-attr">target</span>=<span class="hljs-string">&quot;_blank&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;noopener&quot;</span>&gt;</span>Vercel<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;ah-tab-content&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://i.vince.pub/&quot;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;100%&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;500&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;topFrame&quot;</span> <span class="hljs-attr">scrolling</span>=<span class="hljs-string">&quot;yes&quot;</span> <span class="hljs-attr">noresize</span>=<span class="hljs-string">&quot;noresize&quot;</span> <span class="hljs-attr">frameborder</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;topFrame&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+ <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+ 
+ <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/gh/vinceying/blog-file@master/share/tabs/tabs.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+ <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span>
+<span class="javascript">     $(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;</span>
+<span class="javascript">         $(<span class="hljs-string">&#x27;.ah-tab-wrapper&#x27;</span>).horizontalmenu(&#123;</span>
+<span class="javascript">             itemClick: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">item</span>) </span>&#123;</span>
+<span class="javascript">                 $(<span class="hljs-string">&#x27;.ah-tab-content-wrapper .ah-tab-content&#x27;</span>).removeAttr(<span class="hljs-string">&#x27;data-ah-tab-active&#x27;</span>);</span>
+<span class="javascript">                 $(<span class="hljs-string">&#x27;.ah-tab-content-wrapper .ah-tab-content:eq(&#x27;</span> + $(item).index() + <span class="hljs-string">&#x27;)&#x27;</span>).attr(<span class="hljs-string">&#x27;data-ah-tab-active&#x27;</span>, <span class="hljs-string">&#x27;true&#x27;</span>);</span>
+<span class="javascript">                 <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>; <span class="hljs-comment">//if this finction return true then will be executed http request</span></span>
+             &#125;
+         &#125;);
+     &#125;);
+ <span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre></div>
+<h4 id="css- 引入文件 -2"><a class="markdownIt-Anchor" href="#css- 引入文件 -2"></a> CSS 引入文件</h4>
+<div class="hljs"><pre><code class="hljs CSS"><span class="hljs-selector-class">.ah-tab-wrapper</span> &#123;
+    <span class="hljs-attribute">position</span>: relative;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-wrapper</span> *,
+<span class="hljs-selector-class">.ah-tab-wrapper</span> *:before,
+.ah-tab-wrapper *:after &#123;
+    box-sizing: border-box;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab</span> &#123;
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#ebebeb</span>;
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">white-space</span>: nowrap;
+    <span class="hljs-attribute">overflow</span>: hidden;
+    <span class="hljs-attribute">letter-spacing</span>: -<span class="hljs-number">0.3em</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab</span><span class="hljs-selector-pseudo">::before</span>,
+<span class="hljs-selector-class">.ah-tab</span><span class="hljs-selector-pseudo">::after</span> &#123;
+    <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">transition</span>: opacity .<span class="hljs-number">3s</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab</span><span class="hljs-selector-pseudo">::before</span> &#123;
+    <span class="hljs-attribute">left</span>: -<span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">30px</span>;
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">-moz-linear-gradient</span>(right, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">0%</span>, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">1</span>) <span class="hljs-number">70%</span>, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">1</span>) <span class="hljs-number">99%</span>);
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">-webkit-linear-gradient</span>(right, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">0%</span>, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">1</span>) <span class="hljs-number">70%</span>, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">1</span>) <span class="hljs-number">99%</span>);
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">linear-gradient</span>(to left, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">0%</span>, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">1</span>) <span class="hljs-number">70%</span>, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">1</span>) <span class="hljs-number">99%</span>);
+    <span class="hljs-attribute">filter</span>: progid: DXImageTransform.Microsoft.<span class="hljs-built_in">gradient</span>(startColorstr=<span class="hljs-string">&#x27;#ffffff&#x27;</span>, endColorstr=<span class="hljs-string">&#x27;#00ffffff&#x27;</span>, GradientType=<span class="hljs-number">1</span>);
+&#125;
+
+<span class="hljs-selector-class">.ah-tab</span><span class="hljs-selector-pseudo">::after</span> &#123;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">80px</span>;
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">-moz-linear-gradient</span>(left, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">0%</span>, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">1</span>) <span class="hljs-number">40%</span>, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">1</span>) <span class="hljs-number">99%</span>);
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">-webkit-linear-gradient</span>(left, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">0%</span>, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">1</span>) <span class="hljs-number">40%</span>, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">1</span>) <span class="hljs-number">99%</span>);
+    <span class="hljs-attribute">background</span>: <span class="hljs-built_in">linear-gradient</span>(to right, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0</span>) <span class="hljs-number">0%</span>, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">1</span>) <span class="hljs-number">40%</span>, <span class="hljs-built_in">rgba</span>(<span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">255</span>, <span class="hljs-number">1</span>) <span class="hljs-number">99%</span>);
+    <span class="hljs-attribute">filter</span>: progid: DXImageTransform.Microsoft.<span class="hljs-built_in">gradient</span>(startColorstr=<span class="hljs-string">&#x27;#00ffffff&#x27;</span>, endColorstr=<span class="hljs-string">&#x27;#ffffff&#x27;</span>, GradientType=<span class="hljs-number">1</span>);
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-overflow-left</span><span class="hljs-selector-pseudo">::before</span> &#123;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-overflow-right</span><span class="hljs-selector-pseudo">::after</span> &#123;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-overflow-wrapper</span> &#123;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">43px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-overflow-wrapper</span><span class="hljs-selector-attr">[data-ah-tab-active=<span class="hljs-string">&quot;true&quot;</span>]</span> &#123;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">transition</span>: opacity .<span class="hljs-number">3s</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-overflow-menu</span> &#123;
+    <span class="hljs-attribute">background</span>: transparent <span class="hljs-built_in">url</span>(<span class="hljs-string">https://cdn.vince.pub/blog-file/photo/list.svg</span>) center center no-repeat;
+    <span class="hljs-attribute">background-size</span>: <span class="hljs-number">18px</span>;
+    <span class="hljs-attribute">display</span>: inline-block;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">cursor</span>: pointer;
+    <span class="hljs-attribute">transition</span>: opacity .<span class="hljs-number">3s</span>;
+    <span class="hljs-attribute">opacity</span>: .<span class="hljs-number">7</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-overflow-wrapper</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.ah-tab-overflow-menu</span> &#123;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-overflow-list</span> &#123;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: -<span class="hljs-number">1000%</span>;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">text-align</span>: left;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#e9e9e9</span>;
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">0px</span> <span class="hljs-number">3px</span> <span class="hljs-number">7px</span> <span class="hljs-number">0px</span> <span class="hljs-built_in">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.09</span>);
+    <span class="hljs-attribute">list-style</span>: none;
+    <span class="hljs-attribute">transition</span>: opacity .<span class="hljs-number">3s</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">290px</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-overflow-list</span><span class="hljs-selector-pseudo">::after</span> &#123;
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot; &quot;</span>;
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: -<span class="hljs-number">14px</span>;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">14px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">7px</span> solid transparent;
+    <span class="hljs-attribute">border-bottom-color</span>: <span class="hljs-number">#fff</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-overflow-list</span><span class="hljs-selector-pseudo">::before</span> &#123;
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot; &quot;</span>;
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">top</span>: -<span class="hljs-number">16px</span>;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">13px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">8px</span> solid transparent;
+    <span class="hljs-attribute">border-bottom-color</span>: <span class="hljs-number">#cdcdcd</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-overflow-wrapper</span><span class="hljs-selector-pseudo">:hover</span> <span class="hljs-selector-class">.ah-tab-overflow-list</span> &#123;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">99%</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-overflow-list</span><span class="hljs-selector-pseudo">:hover</span> &#123;
+    <span class="hljs-attribute">display</span>: block;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-item</span> &#123;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#8b8b8b</span>;
+    <span class="hljs-attribute">cursor</span>: pointer;
+    <span class="hljs-attribute">display</span>: inline-block;
+    <span class="hljs-attribute">letter-spacing</span>: normal;
+    <span class="hljs-attribute">transition</span>: all .<span class="hljs-number">3s</span>;
+    <span class="hljs-attribute">text-decoration</span>: none;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab</span>&gt;<span class="hljs-selector-class">.ah-tab-item</span> &#123;
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">3px</span> solid transparent;
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">30px</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">15px</span> <span class="hljs-number">0</span>;
+&#125;
+
+<span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">768px</span>) &#123;
+    <span class="hljs-selector-class">.ah-tab</span>&gt;<span class="hljs-selector-class">.ah-tab-item</span> &#123;
+        <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">50px</span>;
+    &#125;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-item</span><span class="hljs-selector-attr">[data-ah-tab-active=<span class="hljs-string">&quot;true&quot;</span>]</span> &#123;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#215393</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab</span>&gt;<span class="hljs-selector-class">.ah-tab-item</span><span class="hljs-selector-pseudo">:hover</span> &#123;
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">3px</span> solid <span class="hljs-number">#8b8b8b</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab</span>&gt;<span class="hljs-selector-class">.ah-tab-item</span><span class="hljs-selector-attr">[data-ah-tab-active=<span class="hljs-string">&quot;true&quot;</span>]</span> &#123;
+    <span class="hljs-attribute">border-bottom-color</span>: <span class="hljs-number">#215393</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-overflow-list</span>&gt;<span class="hljs-selector-class">.ah-tab-item</span> &#123;
+    <span class="hljs-attribute">border-left</span>: <span class="hljs-number">3px</span> solid transparent;
+    <span class="hljs-attribute">display</span>: block;
+    <span class="hljs-attribute">overflow</span>: hidden;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">20px</span>;
+    <span class="hljs-attribute">text-overflow</span>: ellipsis;
+    <span class="hljs-attribute">white-space</span>: nowrap;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-overflow-list</span>&gt;<span class="hljs-selector-class">.ah-tab-item</span><span class="hljs-selector-pseudo">:hover</span> &#123;
+    <span class="hljs-attribute">border-left-color</span>: <span class="hljs-number">#8b8b8b</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-overflow-list</span>&gt;<span class="hljs-selector-class">.ah-tab-item</span><span class="hljs-selector-attr">[data-ah-tab-active=<span class="hljs-string">&quot;true&quot;</span>]</span> &#123;
+    <span class="hljs-attribute">border-left-color</span>: <span class="hljs-number">#215393</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-content-wrapper</span> &#123;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">30px</span> <span class="hljs-number">0</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-content</span> &#123;
+    <span class="hljs-attribute">display</span>: none;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">30px</span>;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#ebebeb</span>;
+&#125;
+
+<span class="hljs-selector-class">.ah-tab-content</span><span class="hljs-selector-attr">[data-ah-tab-active=<span class="hljs-string">&quot;true&quot;</span>]</span> &#123;
+    <span class="hljs-attribute">display</span>: block;
+&#125;</code></pre></div>
+<h4 id="js- 引入文件"><a class="markdownIt-Anchor" href="#js- 引入文件"></a> JS 引入文件</h4>
+<div class="hljs"><pre><code class="hljs JS">(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$</span>) </span>&#123;
+    $.fn.horizontalmenu = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">option</span>) </span>&#123;
+        <span class="hljs-keyword">var</span> setting = &#123;
+            itemClick: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">sender</span>) </span>&#123;
+                <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+            &#125;
+        &#125;;
+
+        <span class="hljs-keyword">if</span> (option) $.extend(setting, option);
+
+        <span class="hljs-keyword">var</span> isOverflown = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">selector</span>) </span>&#123;
+            <span class="hljs-keyword">var</span> element = $(selector)[<span class="hljs-number">0</span>];
+            <span class="hljs-keyword">return</span> element.scrollHeight &gt; element.clientHeight || element.scrollWidth &gt; element.clientWidth;
+        &#125;
+
+        <span class="hljs-keyword">var</span> adaptiveTab = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">tabWrapper</span>) </span>&#123;
+            <span class="hljs-keyword">var</span> tab = $(tabWrapper).find(<span class="hljs-string">&#x27;.ah-tab&#x27;</span>);
+            <span class="hljs-keyword">var</span> tabOvorflowList = $(tabWrapper).find(<span class="hljs-string">&#x27;.ah-tab-overflow-wrapper&#x27;</span>);
+            <span class="hljs-keyword">var</span> isOver = isOverflown(tab);
+            <span class="hljs-keyword">if</span> (isOver) &#123;
+                tab.addClass(<span class="hljs-string">&#x27;ah-tab-overflow-right&#x27;</span>);
+            &#125; <span class="hljs-keyword">else</span> &#123;
+                tab.removeClass(<span class="hljs-string">&#x27;ah-tab-overflow-right&#x27;</span>);
+            &#125;
+            tabOvorflowList.attr(<span class="hljs-string">&#x27;data-ah-tab-active&#x27;</span>, isOver);
+            <span class="hljs-keyword">var</span> items = tab.find(<span class="hljs-string">&#x27;.ah-tab-item&#x27;</span>);
+            <span class="hljs-keyword">var</span> activeItem = tab.find(<span class="hljs-string">&#x27;.ah-tab-item[data-ah-tab-active=&quot;true&quot;]&#x27;</span>);
+
+            <span class="hljs-keyword">var</span> activeIndex = activeItem.index();
+            <span class="hljs-keyword">var</span> marginLeft = <span class="hljs-number">0</span>,
+                marginRight = <span class="hljs-number">0</span>;
+
+            <span class="hljs-keyword">if</span> (isOver) &#123;
+                <span class="hljs-comment">// console.clear()</span>
+                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; items.length; i++) &#123;
+                    <span class="hljs-keyword">var</span> val = items.eq(i).width() + <span class="hljs-built_in">parseInt</span>(items.eq(i).css(<span class="hljs-string">&#x27;margin-right&#x27;</span>));
+                    <span class="hljs-keyword">if</span> (i &lt; activeIndex) &#123;
+                        marginLeft += val;
+                        <span class="hljs-keyword">continue</span>;
+                    &#125;
+                    marginRight += val;
+                &#125;
+                <span class="hljs-built_in">console</span>.log(marginRight);
+                <span class="hljs-keyword">if</span> (marginLeft + activeItem.width() + <span class="hljs-number">80</span> &gt; $(tab).width()) &#123;
+                    marginLeft *= -<span class="hljs-number">1</span>;
+                    <span class="hljs-keyword">if</span> (activeIndex) &#123;
+
+
+                        <span class="hljs-keyword">var</span> dW = $(tab).width() - marginRight - <span class="hljs-number">80</span>;
+                        marginLeft += <span class="hljs-built_in">parseInt</span>(activeItem.css(<span class="hljs-string">&#x27;margin-right&#x27;</span>));
+                        <span class="hljs-built_in">console</span>.log(dW);
+                        <span class="hljs-keyword">if</span> (dW &gt; <span class="hljs-number">0</span>)
+                            marginLeft += dW;
+                        <span class="hljs-comment">// 胁褘褔懈褋谢懈褌褜 褕懈褉懈薪褍 锌芯褋谢械 胁褘写械谢械薪薪芯谐芯 褝谢械屑械薪褌邪 薪邪蟹芯胁械屑 械谐芯 dA. dW = 械褋谢懈 tab.width() - dA &gt; 0, 褌芯 marginLeft -= dW </span>
+                        tab.addClass(<span class="hljs-string">&#x27;ah-tab-overflow-left&#x27;</span>);
+                    &#125;
+                &#125; <span class="hljs-keyword">else</span> &#123;
+                    marginLeft = <span class="hljs-number">0</span>;
+                    tab.removeClass(<span class="hljs-string">&#x27;ah-tab-overflow-left&#x27;</span>);
+                &#125;
+            &#125; <span class="hljs-keyword">else</span> &#123;
+                tab.removeClass(<span class="hljs-string">&#x27;ah-tab-overflow-left&#x27;</span>);
+            &#125;
+            items.css(<span class="hljs-string">&#x27;transform&#x27;</span>, <span class="hljs-string">&#x27;translateX(&#x27;</span> + marginLeft + <span class="hljs-string">&#x27;px)&#x27;</span>);
+        &#125;
+
+        <span class="hljs-keyword">var</span> initialize = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">wrapper</span>) </span>&#123;
+            <span class="hljs-keyword">if</span> (wrapper.find(<span class="hljs-string">&#x27;.ah-tab-overflow-wrapper&#x27;</span>).length) <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+
+            <span class="hljs-keyword">var</span> items = wrapper.find(<span class="hljs-string">&#x27;.ah-tab-item&#x27;</span>);
+            items.bind(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;
+                <span class="hljs-keyword">var</span> isContinue = setting.itemClick($(<span class="hljs-built_in">this</span>));
+                <span class="hljs-keyword">if</span> (!isContinue) &#123;
+                    <span class="hljs-keyword">var</span> index = $(<span class="hljs-built_in">this</span>).index();
+                    <span class="hljs-keyword">var</span> w = $(<span class="hljs-built_in">this</span>).closest(<span class="hljs-string">&#x27;.ah-tab-wrapper&#x27;</span>);
+                    w.find(<span class="hljs-string">&#x27;.ah-tab-item&#x27;</span>).removeAttr(<span class="hljs-string">&#x27;data-ah-tab-active&#x27;</span>);
+                    w.find(<span class="hljs-string">&#x27;.ah-tab .ah-tab-item&#x27;</span>).eq(index).attr(<span class="hljs-string">&#x27;data-ah-tab-active&#x27;</span>, <span class="hljs-string">&#x27;true&#x27;</span>);
+                    w.find(<span class="hljs-string">&#x27;.ah-tab-overflow-wrapper .ah-tab-item&#x27;</span>).eq(index).attr(<span class="hljs-string">&#x27;data-ah-tab-active&#x27;</span>, <span class="hljs-string">&#x27;true&#x27;</span>);
+                    adaptiveTab(w);
+                &#125;
+                <span class="hljs-keyword">return</span> isContinue;
+            &#125;);
+
+            $(<span class="hljs-string">&#x27;&lt;div&gt;&#x27;</span>, &#123;
+                class: &#x27;ah-tab-overflow-wrapper&#x27;,
+                append: $(<span class="hljs-string">&#x27;&lt;button&gt;&#x27;</span>, &#123;
+                    type: <span class="hljs-string">&#x27;menu&#x27;</span>,
+                    class: &#x27;ah-tab-overflow-menu&#x27;
+                &#125;).add($(<span class="hljs-string">&#x27;&lt;div&gt;&#x27;</span>, &#123;
+                    class: &#x27;ah-tab-overflow-list&#x27;,
+                    append: items.clone(<span class="hljs-literal">true</span>, <span class="hljs-literal">true</span>).removeAttr(<span class="hljs-string">&#x27;style&#x27;</span>)
+                &#125;))
+            &#125;).appendTo(wrapper);
+
+            adaptiveTab(wrapper);
+
+            <span class="hljs-keyword">var</span> resizeStabilizer = <span class="hljs-literal">undefined</span>;
+            $(<span class="hljs-built_in">window</span>).bind(<span class="hljs-string">&#x27;resize&#x27;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;
+                <span class="hljs-keyword">if</span> (resizeStabilizer) <span class="hljs-built_in">clearTimeout</span>(resizeStabilizer);
+                resizeStabilizer = <span class="hljs-built_in">setTimeout</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;
+                    adaptiveTab(wrapper);
+                &#125;, <span class="hljs-number">20</span>);
+            &#125;);
+        &#125;
+
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.each(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;
+            initialize($(<span class="hljs-built_in">this</span>));
+        &#125;);
+    &#125;;
+&#125;)(jQuery);</code></pre></div>
+<p>在想要的地方中添加代码即可，具体效果查看演示。</p>
+<h3 id="演示 -3"><a class="markdownIt-Anchor" href="# 演示 -3"></a> 演示</h3>
+<iframe src="https://i.vince.pub/about" width="100%" height="400" name="topFrame" scrolling="yes"  noresize="noresize" frameborder="0" id="topFrame"></iframe>
+<h3 id="cdn-2"><a class="markdownIt-Anchor" href="#cdn-2"></a> CDN</h3>
+<div class="hljs"><pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>cdn.jsdelivr.net<span class="hljs-regexp">/gh/</span>vinceying<span class="hljs-regexp">/blog-file@master/</span>share<span class="hljs-regexp">/tabs/</span>tabs.js
+https:<span class="hljs-regexp">//</span>cdn.jsdelivr.net<span class="hljs-regexp">/gh/</span>vinceying<span class="hljs-regexp">/blog-file@master/</span>share<span class="hljs-regexp">/tabs/</span>tabs.css</code></pre></div>
+<h2 id="基于 -svg- 的状态仪表盘"><a class="markdownIt-Anchor" href="# 基于 -svg- 的状态仪表盘"></a> 基于 SVG 的状态仪表盘</h2>
+<h3 id="描述 -4"><a class="markdownIt-Anchor" href="# 描述 -4"></a> 描述</h3>
+<p>来源 <a target="_blank" rel="noopener" href="https://github.com/killia15/ProgressCircle">GitHub</a>, 我修改了样式文件，适配了移动端。</p>
+<h3 id="代码记使用"><a class="markdownIt-Anchor" href="# 代码记使用"></a> 代码记使用</h3>
+<h4 id="使用代码 -2"><a class="markdownIt-Anchor" href="# 使用代码 -2"></a> 使用代码</h4>
+<div class="hljs"><pre><code class="hljs HTML"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;html-partial&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/gh/vinceying/blog-file@master/share/circlechart/circlechart.css&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;percent&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;circlechart&quot;</span> <span class="hljs-attr">data-percentage</span>=<span class="hljs-string">&quot;-50&quot;</span>&gt;</span>Study<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;circlechart&quot;</span> <span class="hljs-attr">data-percentage</span>=<span class="hljs-string">&quot;65&quot;</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;circlechart&quot;</span> <span class="hljs-attr">data-percentage</span>=<span class="hljs-string">&quot;30&quot;</span>&gt;</span>Website<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span>
+<span class="javascript">        <span class="hljs-built_in">window</span>.jQuery || <span class="hljs-built_in">document</span>.write(<span class="hljs-string">&#x27;&lt;script src=&quot;https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js&quot;&gt;&lt;\/script&gt;&#x27;</span>)</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/gh/vinceying/blog-file@master/share/circlechart/circlechart.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span>
+<span class="javascript">        $(<span class="hljs-string">&#x27;.circlechart&#x27;</span>).circlechart(); <span class="hljs-comment">// Initialization</span></span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div>
+<h4 id="css- 引入文件 -3"><a class="markdownIt-Anchor" href="#css- 引入文件 -3"></a> CSS 引入文件</h4>
+<div class="hljs"><pre><code class="hljs CSS"><span class="hljs-comment">/**</span>
+<span class="hljs-comment"> * Inspiration for this project found at:</span>
+<span class="hljs-comment"> * https://markus.oberlehner.net/blog/pure-css-animated-svg-circle-chart</span>
+<span class="hljs-comment"> * 1. The `reverse` animation direction plays the animation backwards</span>
+<span class="hljs-comment"> *    which makes it start at the stroke offset 100 which means displaying</span>
+<span class="hljs-comment"> *    no stroke at all and animating it to the value defined in the SVG</span>
+<span class="hljs-comment"> *    via the inline `stroke-dashoffset` attribute.</span>
+<span class="hljs-comment"> * 2. Rotate by -90 degree to make the starting point of the</span>
+<span class="hljs-comment"> *    stroke the top of the circle.</span>
+<span class="hljs-comment"> * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer</span>
+<span class="hljs-comment"> *    and Edge, use the transform attribute directly on the SVG element as a</span>
+<span class="hljs-comment"> * .  workaround.</span>
+<span class="hljs-comment"> */</span>
+
+<span class="hljs-selector-class">.circle-chart</span> &#123;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">150px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">150px</span>;
+&#125;
+
+<span class="hljs-selector-class">.circle-chart__circle</span> &#123;
+    stroke: <span class="hljs-number">#00acc1</span>;
+    stroke-<span class="hljs-attribute">width</span>: <span class="hljs-number">2</span>;
+    stroke-linecap: square;
+    fill: none;
+    <span class="hljs-attribute">animation</span>: circle-chart-fill <span class="hljs-number">2s</span> reverse;
+    <span class="hljs-comment">/* 1 */</span>
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(-<span class="hljs-number">90deg</span>);
+    <span class="hljs-comment">/* 2, 3 */</span>
+    <span class="hljs-attribute">transform-origin</span>: center;
+    <span class="hljs-comment">/* 4 */</span>
+&#125;
+
+
+<span class="hljs-comment">/**</span>
+<span class="hljs-comment">   * 1. Rotate by -90 degree to make the starting point of the</span>
+<span class="hljs-comment">   *    stroke the top of the circle.</span>
+<span class="hljs-comment">   * 2. Scaling mirrors the circle to make the stroke move right</span>
+<span class="hljs-comment">   *    to mark a positive chart value.</span>
+<span class="hljs-comment">   * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer</span>
+<span class="hljs-comment">   *    and Edge, use the transform attribute directly on the SVG element as a</span>
+<span class="hljs-comment">   * .  workaround.</span>
+<span class="hljs-comment">   */</span>
+
+<span class="hljs-selector-class">.circle-chart__circle--negative</span> &#123;
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(-<span class="hljs-number">90deg</span>) <span class="hljs-built_in">scale</span>(<span class="hljs-number">1</span>, -<span class="hljs-number">1</span>);
+    <span class="hljs-comment">/* 1, 2, 3 */</span>
+&#125;
+
+<span class="hljs-selector-class">.circle-chart__background</span> &#123;
+    stroke: <span class="hljs-number">#efefef</span>;
+    stroke-<span class="hljs-attribute">width</span>: <span class="hljs-number">2</span>;
+    fill: none;
+&#125;
+
+<span class="hljs-selector-class">.circle-chart__info</span> &#123;
+    <span class="hljs-attribute">animation</span>: circle-chart-appear <span class="hljs-number">2s</span> forwards;
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(<span class="hljs-number">0.3em</span>);
+&#125;
+
+<span class="hljs-selector-class">.circle-chart__percent</span> &#123;
+    alignment-baseline: central;
+    text-anchor: middle;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">8px</span>;
+&#125;
+
+<span class="hljs-selector-class">.circle-chart__subline</span> &#123;
+    alignment-baseline: central;
+    text-anchor: middle;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">3px</span>;
+&#125;
+
+<span class="hljs-selector-class">.success-stroke</span> &#123;
+    stroke: <span class="hljs-number">#00C851</span>;
+&#125;
+
+<span class="hljs-selector-class">.warning-stroke</span> &#123;
+    stroke: <span class="hljs-number">#ffbb33</span>;
+&#125;
+
+<span class="hljs-selector-class">.danger-stroke</span> &#123;
+    stroke: <span class="hljs-number">#ff4444</span>;
+&#125;
+
+<span class="hljs-keyword">@keyframes</span> circle-chart-fill &#123;
+    <span class="hljs-selector-tag">to</span> &#123;
+        stroke-dasharray: <span class="hljs-number">0</span> <span class="hljs-number">100</span>;
+    &#125;
+&#125;
+
+<span class="hljs-keyword">@keyframes</span> circle-chart-appear &#123;
+    <span class="hljs-selector-tag">to</span> &#123;
+        <span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+        <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateY</span>(<span class="hljs-number">0</span>);
+    &#125;
+&#125;
+
+<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">960px</span>) &#123;
+    <span class="hljs-selector-id">#percent</span> &#123;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">400px</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">400px</span>;
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">50px</span> auto;
+    &#125;
+&#125;
+
+<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-number">960px</span>) &#123;
+    <span class="hljs-selector-id">#percent</span> &#123;
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">600px</span>;
+        <span class="hljs-attribute">height</span>: <span class="hljs-number">200px</span>;
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">50px</span> auto;
+    &#125;
+&#125;
+
+<span class="hljs-selector-class">.circlechart</span> &#123;
+    <span class="hljs-attribute">float</span>: left;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+&#125;
+
+<span class="hljs-selector-class">.html-partial</span> &#123;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+&#125;</code></pre></div>
+<h4 id="js- 引入文件 -2"><a class="markdownIt-Anchor" href="#js- 引入文件 -2"></a> JS 引入文件</h4>
+<div class="hljs"><pre><code class="hljs JS"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">makesvg</span>(<span class="hljs-params">percentage, inner_text = <span class="hljs-string">&quot;&quot;</span></span>) </span>&#123;
+
+    <span class="hljs-keyword">var</span> abs_percentage = <span class="hljs-built_in">Math</span>.abs(percentage).toString();
+    <span class="hljs-keyword">var</span> percentage_str = percentage.toString();
+    <span class="hljs-keyword">var</span> classes = <span class="hljs-string">&quot;&quot;</span>
+
+    <span class="hljs-keyword">if</span> (percentage &lt; <span class="hljs-number">0</span>) &#123;
+        classes = <span class="hljs-string">&quot;danger-stroke circle-chart__circle--negative&quot;</span>;
+    &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (percentage &gt; <span class="hljs-number">0</span> &amp;&amp; percentage &lt;= <span class="hljs-number">30</span>) &#123;
+        classes = <span class="hljs-string">&quot;warning-stroke&quot;</span>;
+    &#125; <span class="hljs-keyword">else</span> &#123;
+        classes = <span class="hljs-string">&quot;success-stroke&quot;</span>;
+    &#125;
+
+    <span class="hljs-keyword">var</span> svg = <span class="hljs-string">&#x27;&lt;svg class=&quot;circle-chart&quot; viewbox=&quot;0 0 33.83098862 33.83098862&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&#x27;</span> +
+        <span class="hljs-string">&#x27;&lt;circle class=&quot;circle-chart__background&quot; cx=&quot;16.9&quot; cy=&quot;16.9&quot; r=&quot;15.9&quot; /&gt;&#x27;</span> +
+        <span class="hljs-string">&#x27;&lt;circle class=&quot;circle-chart__circle &#x27;</span> + classes + <span class="hljs-string">&#x27;&quot;&#x27;</span> +
+        <span class="hljs-string">&#x27;stroke-dasharray=&quot;&#x27;</span> + abs_percentage + <span class="hljs-string">&#x27;,100&quot;    cx=&quot;16.9&quot; cy=&quot;16.9&quot; r=&quot;15.9&quot; /&gt;&#x27;</span> +
+        <span class="hljs-string">&#x27;&lt;g class=&quot;circle-chart__info&quot;&gt;&#x27;</span> +
+        <span class="hljs-string">&#x27;   &lt;text class=&quot;circle-chart__percent&quot; x=&quot;17.9&quot; y=&quot;15.5&quot;&gt;&#x27;</span> + percentage_str + <span class="hljs-string">&#x27;%&lt;/text&gt;&#x27;</span>;
+
+    <span class="hljs-keyword">if</span> (inner_text) &#123;
+        svg += <span class="hljs-string">&#x27;&lt;text class=&quot;circle-chart__subline&quot; x=&quot;16.91549431&quot; y=&quot;22&quot;&gt;&#x27;</span> + inner_text + <span class="hljs-string">&#x27;&lt;/text&gt;&#x27;</span>
+    &#125;
+
+    svg += <span class="hljs-string">&#x27; &lt;/g&gt;&lt;/svg&gt;&#x27;</span>;
+
+    <span class="hljs-keyword">return</span> svg
+&#125;
+
+(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">$</span>) </span>&#123;
+
+    $.fn.circlechart = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;
+        <span class="hljs-built_in">this</span>.each(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123;
+            <span class="hljs-keyword">var</span> percentage = $(<span class="hljs-built_in">this</span>).data(<span class="hljs-string">&quot;percentage&quot;</span>);
+            <span class="hljs-keyword">var</span> inner_text = $(<span class="hljs-built_in">this</span>).text();
+            $(<span class="hljs-built_in">this</span>).html(makesvg(percentage, inner_text));
+        &#125;);
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>;
+    &#125;;
+
+&#125;(jQuery));</code></pre></div>
+<p>在想要的地方中添加代码即可，具体效果查看演示。</p>
+<h3 id="演示 -4"><a class="markdownIt-Anchor" href="# 演示 -4"></a> 演示</h3>
+<iframe src="https://i.vince.pub/note/update/" width="100%" height="400" name="topFrame" scrolling="yes"  noresize="noresize" frameborder="0" id="topFrame"></iframe>
+<h3 id="cdn-3"><a class="markdownIt-Anchor" href="#cdn-3"></a> CDN</h3>
+<div class="hljs"><pre><code class="hljs awk">https:<span class="hljs-regexp">//</span>cdn.jsdelivr.net<span class="hljs-regexp">/gh/</span>vinceying<span class="hljs-regexp">/blog-file@master/</span>share<span class="hljs-regexp">/circlechart/</span>circlechart.css
+https:<span class="hljs-regexp">//</span>cdn.jsdelivr.net<span class="hljs-regexp">/gh/</span>vinceying<span class="hljs-regexp">/blog-file@master/</span>share<span class="hljs-regexp">/circlechart/</span>circlechart.js</code></pre></div>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%95%99%E7%A8%8B%E5%88%86%E4%BA%AB/">教程分享</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%BD%91%E7%AB%99%E7%9B%B8%E5%85%B3/">网站相关</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/posts/f939bc94/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">对主站和博客的一些思考</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/posts/1c50a9dc/">
+                        <span class="hidden-mobile">健康最为重要，记一次体检心得</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+    <div class="text-center py-3">
+
+        <div class="about-icons">
+            <a href="https://github.com/vinceying/" target="_blank" rel="noopener" class="">
+                <i class="iconfont icon-git" aria-hidden="true"></i>
+            </a>
+
+            <div><br>
+                <p>由<a href="https://hexo.io" target="_blank" rel="nofollow noopener"> Hexo </a>强力驱动 | 使用
+                    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> Fluid </a> 作为主题 | 基于<a href="https://cloud.tencent.com/product/tcb?from=12334" target="_blank" rel="nofollow noopener"> CloudBase </a>静态托管服务
+                    <a href="javascript:;" class="qr-trigger">
+                        <a href="https://cloud.tencent.com/product/tcb?from=12334" class="qr-trigger" target="_blank" rel="nofollow noopener"><i class="iconfont icon-ziyuan" aria-hidden="true"></i>
+                  <img class="qr-img" src="https://cdn.vince.pub/blog-file/photo/tencent_cloudbase.png" srcset="/img/loading.gif" alt="qrcode" /></a>
+                    </a><br>
+                    <i class="iconfont icon-fenzhi" aria-hidden="true"></i>节点信息&nbsp&nbsp| <a target="_blank" rel="noopener" href="https://netlify.vince.pub/"><i class="iconfont icon-netlify" aria-hidden="true"> Netlify&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://gh.vince.pub/"><i class="iconfont icon-github" aria-hidden="true"> GitHub&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://coding.vince.pub/"><i class="iconfont icon-coding" aria-hidden="true"> Coding&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://vercel.vince.pub/"><i class="iconfont icon-sanjiaoxing" aria-hidden="true"> Vercel&nbsp</i></a><br><a href="https://i.vince.pub/about/#相关内容及信息"><i class="iconfont icon-zhuangtai" aria-hidden="true"> 状态&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://www.vince.pub/"><i class="iconfont icon-icon_wangye" aria-hidden="true"> 主站&nbsp</i></a><a target="_blank" rel="noopener" href="https://file.vince.pub"><i class="iconfont icon-wenjianjia" aria-hidden="true"> 下载</i></a>
+                    <br>
+                </p>
+                <p><i class="iconfont icon-qitalaji" aria-hidden="true"></i><a href="https://i.vince.pub/" target="_blank" rel="nofollow noopener">© 2020 Vince </a>
+                    <a href="https://i.vince.pub/" target="_blank" rel="nofollow noopener"></a> | <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">闽ICP备20006816号-1</a>
+                </p>
+            </div>
+            
+
+                
+
+                    
+        </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+  
+<script src="/js/demo.js"></script>
+<script src="https://cdn.vince.pub/blog-file/js/horizontalmenu.js"></script>
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: 'article.markdown-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "博客常用的插件和拓展&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?7b15c27c537bee99d8a4405d874d459f";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>

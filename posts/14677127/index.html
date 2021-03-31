@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://cdn.vince.pub/blog-file/photo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://cdn.vince.pub/blog-file/photo/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="分享教程心得体验">
+  <meta name="author" content="Vince">
+  <meta name="keywords" content="">
+  <title>搭配 Fluid 如何优雅的写一篇文章 - Vince&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/atom-one-dark.min.css" />
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/demo.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1744971_dbtmro899q7.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/jquery.horizontalmenu.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/normalize.css">
+<link rel="stylesheet" href="https://cdn.vince.pub/blog-file/css/icheck-material.css">
+
+
+
+  <script  src="/js/utils.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Vince's Blog</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-icon_wangye"></i>
+                索引
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/tags/">
+                    <i class="iconfont icon-tags-fill"></i>
+                    标签
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/archives/">
+                    <i class="iconfont icon-archive-fill"></i>
+                    归档
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/categories/">
+                    <i class="iconfont icon-category-fill"></i>
+                    分类
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/note/">
+                <i class="iconfont icon-clipboard"></i>
+                随笔
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/comment/">
+                <i class="iconfont icon-comments"></i>
+                留言
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-gongneng"></i>
+                更多
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://Cloud.vince.pub">
+                    <i class="iconfont icon-wenjianjia"></i>
+                    私有云
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://file.vince.pub/">
+                    <i class="iconfont icon-fenzhi"></i>
+                    文件
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" href="/Fluid-Source-File/">
+                    <i class="iconfont icon-icon-test1"></i>
+                    Fluid 镜像站
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('https://cdn.vince.pub/blog-file/photo/fluid-write.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-05-13 17:39">
+      2020年5月13日 下午
+    </time>
+  </div>
+
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      13
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <h2 id="前言"><a class="markdownIt-Anchor" href="# 前言"></a> 前言</h2>
+<p>Fluid 是一款很十分优雅的主题，那么写一篇优雅的文章搭配它呢？以下会从几个方面来简述，主要还是做几个推荐。</p>
+<h2 id="文章内容"><a class="markdownIt-Anchor" href="# 文章内容"></a> 文章内容</h2>
+<h3 id="熟悉 -markdown- 语法"><a class="markdownIt-Anchor" href="# 熟悉 -markdown- 语法"></a> 熟悉 Markdown 语法</h3>
+<p>对于使用 Hexo 的大多数人来说，相信对 Markdown 的语法不会陌生。熟练掌握 Markdown 语法对我们的写作拥有极大的帮助，这里用少用的表格和脚注来举个例子。至于为什么有些公式、流程图无法渲染，是因为 <strong>Markdown 追求简洁式写作，默认渲染器不支持复杂渲染。</strong></p>
+<h4 id="表格"><a class="markdownIt-Anchor" href="# 表格"></a> 表格</h4>
+<table>
+<thead>
+<tr>
+<th>站点</th>
+<th style="text-align:center">地址</th>
+<th style="text-align:right">介绍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FluidDocs</td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/">https://hexo.fluid-dev.com/docs/</a></td>
+<td style="text-align:right">Fluid 官方文档</td>
+</tr>
+<tr>
+<td>Hexo-theme-fluid</td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">https://github.com/fluid-dev/hexo-theme-fluid</a></td>
+<td style="text-align:right">FluidGithub Repo</td>
+</tr>
+<tr>
+<td>Fluid Blog</td>
+<td style="text-align:center"><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/">https://hexo.fluid-dev.com/</a></td>
+<td style="text-align:right">Fluid 官方博客</td>
+</tr>
+</tbody>
+</table>
+<div class="hljs"><pre><code class="hljs gherkin">站点 |<span class="hljs-string">地址 </span>|<span class="hljs-string"> 介绍</span>
+<span class="hljs-string">--</span>|<span class="hljs-string">:--:</span>|<span class="hljs-string">--:</span>
+<span class="hljs-string">FluidDocs</span>|<span class="hljs-string">https://hexo.fluid-dev.com/docs/</span>|<span class="hljs-string">Fluid 官方文档</span>
+<span class="hljs-string">Hexo-theme-fluid</span>|<span class="hljs-string">https://github.com/fluid-dev/hexo-theme-fluid</span>|<span class="hljs-string">FluidGithub Repo</span>
+<span class="hljs-string">Fluid Blog</span>|<span class="hljs-string">https://hexo.fluid-dev.com/</span>|<span class="hljs-string">Fluid 官方博客</span></code></pre></div>
+<h4 id="脚注仅默认渲染器可用"><a class="markdownIt-Anchor" href="# 脚注仅默认渲染器可用"></a> 脚注(仅默认渲染器可用)</h4>
+<p>脚注演示<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<div class="hljs"><pre><code class="hljs less">脚注演示<span class="hljs-selector-attr">[^footnote]</span>
+ <span class="hljs-selector-attr">[^footnote]</span>: 脚注内容演示</code></pre></div>
+<h3 id="善用 -html"><a class="markdownIt-Anchor" href="# 善用 -html"></a> 善用 HTML</h3>
+<p>我们可以在 Markdown 中插入一些简单的 HTML 代码或 CSS 片段来获得更多扩展，使得文章内容更具有多样性。以下演示几个简单功能。</p>
+<p><a id="demo">跳转位置演示（跳转位置设置点）</a></p>
+<h4 id="文字颜色"><a class="markdownIt-Anchor" href="# 文字颜色"></a> 文字颜色</h4>
+<p><span  style="color: #519D9E;">#519D9E 颜色演示</span></p>
+<div class="hljs"><pre><code class="hljs php-template"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span>  <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;color: #519D9E; &quot;</span>&gt;</span>#519D9E 颜色演示<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span></code></pre></div>
+<hr />
+<h4 id="文字大小"><a class="markdownIt-Anchor" href="# 文字大小"></a> 文字大小</h4>
+<p><span  style="font-size:0.7em;">0.7em 文字大小演示</span></p>
+<div class="hljs"><pre><code class="hljs handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span>  <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;font-size:0.7em;&quot;</span>&gt;</span>0.7em 文字大小演示<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span></code></pre></div>
+<hr />
+<h4 id="文字位置"><a class="markdownIt-Anchor" href="# 文字位置"></a> 文字位置</h4>
+<p style="text-align:center">内容居中演示</p>
+<div class="hljs"><pre><code class="hljs dust"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-align:center&quot;</span>&gt;</span>内容居中演示<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> # 可以修改 text-align 参数来设置文字位置。</span></code></pre></div>
+<hr />
+<h4 id="页内跳转"><a class="markdownIt-Anchor" href="# 页内跳转"></a> 页内跳转</h4>
+<p><a href="#demo">点击到达跳转位置演示</a></p>
+<div class="hljs"><pre><code class="hljs livecodeserver">&lt;<span class="hljs-keyword">a</span> href=<span class="hljs-string">&quot;#demo&quot;</span>&gt; 点击到达跳转位置演示 &lt;/<span class="hljs-keyword">a</span>&gt; <span class="hljs-comment"># 在需要跳转的地方添加此代码。</span>
+&lt;<span class="hljs-keyword">a</span> id=<span class="hljs-string">&quot;demo&quot;</span>&gt; 跳转位置演示（跳转位置设置点）&lt;/<span class="hljs-keyword">a</span>&gt; <span class="hljs-comment"># 在跳转位置添加次代码。</span></code></pre></div>
+<hr />
+<h4 id="综合演示"><a class="markdownIt-Anchor" href="# 综合演示"></a> 综合演示</h4>
+<p style="text-align:center;color:#8EC0E4;font-size:1.5em;font-weight: bold;">
+综合演示
+<br>
+优雅使用 Fluid 写文章
+</p>
+<div class="hljs"><pre><code class="hljs xquery"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;text-align:center;color:#8EC0E4;font-size:1.5em;font-weight: bold;&quot;</span>&gt;</span></span>
+<span class="xml">综合演示</span>
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span></span>
+<span class="xml">优雅使用 Fluid 写文章</span>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span>
+</code></pre></div>
+<h4 id="iframe- 页面镶套"><a class="markdownIt-Anchor" href="#iframe- 页面镶套"></a> iframe 页面镶套</h4>
+<p>iframe 页面镶套可以帮助我们更好的展示一个页面。比如以下演示页面。</p>
+<iframe src="https://i.vince.pub/" width="100%" height="650" name="topFrame" scrolling="yes"  noresize="noresize" frameborder="0" id="topFrame"></iframe>
+<div class="hljs"><pre><code class="hljs routeros">&lt;iframe <span class="hljs-attribute">src</span>=<span class="hljs-string">&quot;https://i.vince.pub/&quot;</span> <span class="hljs-attribute">width</span>=<span class="hljs-string">&quot;100%&quot;</span> <span class="hljs-attribute">height</span>=<span class="hljs-string">&quot;500&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-string">&quot;topFrame&quot;</span> <span class="hljs-attribute">scrolling</span>=<span class="hljs-string">&quot;yes&quot;</span>  <span class="hljs-attribute">noresize</span>=<span class="hljs-string">&quot;noresize&quot;</span> <span class="hljs-attribute">frameborder</span>=<span class="hljs-string">&quot;0&quot;</span> <span class="hljs-attribute">id</span>=<span class="hljs-string">&quot;topFrame&quot;</span>&gt;&lt;/iframe&gt;</code></pre></div>
+<p>一些参数说明，<code>width=&quot;100%&quot;</code> 为宽度自适应，高度请根据实际需求跳转，<strong>注意移动端页面是否匹配。</strong> <code>scrolling</code> 为滚动条参数。<code>frameborder</code> 为边框参数。<code>noresize</code> 属性规定用户无法调整框架的大小。</p>
+<h4 id="details- 标签"><a class="markdownIt-Anchor" href="#details- 标签"></a> details 标签</h4>
+<p>用于展示代码较多需要折叠或折叠相关内容，以下为演示。<code>summary</code> 填写显示名称。</p>
+<details>
+<summary>Demo</summary>
+<div class="hljs"><pre><code class="hljs handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>好友申请备注：fluid<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>提问之前请先仔细查阅用户文档<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;200&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;wechat&quot;</span>&gt;</span></span></code></pre></div>
+</details>
+<div class="hljs"><pre><code class="hljs dust"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>Demo<span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>好友申请备注：fluid<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">b</span>&gt;</span>提问之前请先仔细查阅用户文档<span class="hljs-tag">&lt;/<span class="hljs-name">b</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;200&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/gh/fluid-dev/static@master/hexo-theme-fluid/wechat.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;wechat&quot;</span>&gt;</span></span>
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span></span></code></pre></div>
+<h3 id="善用 -tag- 组件"><a class="markdownIt-Anchor" href="# 善用 -tag- 组件"></a> 善用 Tag 组件</h3>
+<p>Fluid 内置了许多 Tag 组件，包含便签、行内标签、勾选框、按钮和组图，可以使用这些组件来丰富文章内容，具体点击查看官方文档查看，<strong><a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/#tag-%E6%8F%92%E4%BB%B6">点击跳转到 FluidDoc</a></strong>。</p>
+<h2 id="配图"><a class="markdownIt-Anchor" href="# 配图"></a> 配图</h2>
+<p>众所周知，<strong>博客好不好看，配图占一半</strong>。这里给大家推荐几个我常用找配图的地方。请尊重相关版权协议。</p>
+<h3 id="wallpaper-hub"><a class="markdownIt-Anchor" href="#wallpaper-hub"></a> Wallpaper Hub</h3>
+<p><img src="https://cdn.vince.pub/blog-file/photo/2020-04-17_175244.png" srcset="/img/loading.gif" alt="Wallpaper Hub" /></p>
+<p><strong><a target="_blank" rel="noopener" href="https://wallpaperhub.app/">点击跳转到 Wallpaper Hub</a></strong></p>
+<h3 id="wallhaven"><a class="markdownIt-Anchor" href="#wallhaven"></a> Wallhaven</h3>
+<p><img src="https://cdn.vince.pub/blog-file/photo/2020-04-17_174841.png" srcset="/img/loading.gif" alt="Wallhaven" /></p>
+<p><strong><a target="_blank" rel="noopener" href="https://wallhaven.cc/">点击跳转到 Wallhaven</a></strong></p>
+<h3 id="unsplash"><a class="markdownIt-Anchor" href="#unsplash"></a> Unsplash</h3>
+<p><img src="https://cdn.vince.pub/blog-file/photo/2020-05-14_000557.png" srcset="/img/loading.gif" alt="Unsplash" /></p>
+<p><strong><a target="_blank" rel="noopener" href="https://unsplash.com/">点击跳转到 Unsplash</a></strong></p>
+<hr class="footnotes-sep" />
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>脚注内容演示 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E6%95%99%E7%A8%8B%E5%88%86%E4%BA%AB/">教程分享</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%88%86%E4%BA%AB/">分享</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E6%95%99%E7%A8%8B/">教程</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                      <a href="/posts/2fc062cb/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">常见静态网站托管平台使用及多节点部署方案</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                      <a href="/posts/35e2592e/">
+                        <span class="hidden-mobile">Hexo-Action-TencentCloudBase</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+    <div class="text-center py-3">
+
+        <div class="about-icons">
+            <a href="https://github.com/vinceying/" target="_blank" rel="noopener" class="">
+                <i class="iconfont icon-git" aria-hidden="true"></i>
+            </a>
+
+            <div><br>
+                <p>由<a href="https://hexo.io" target="_blank" rel="nofollow noopener"> Hexo </a>强力驱动 | 使用
+                    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> Fluid </a> 作为主题 | 基于<a href="https://cloud.tencent.com/product/tcb?from=12334" target="_blank" rel="nofollow noopener"> CloudBase </a>静态托管服务
+                    <a href="javascript:;" class="qr-trigger">
+                        <a href="https://cloud.tencent.com/product/tcb?from=12334" class="qr-trigger" target="_blank" rel="nofollow noopener"><i class="iconfont icon-ziyuan" aria-hidden="true"></i>
+                  <img class="qr-img" src="https://cdn.vince.pub/blog-file/photo/tencent_cloudbase.png" srcset="/img/loading.gif" alt="qrcode" /></a>
+                    </a><br>
+                    <i class="iconfont icon-fenzhi" aria-hidden="true"></i>节点信息&nbsp&nbsp| <a target="_blank" rel="noopener" href="https://netlify.vince.pub/"><i class="iconfont icon-netlify" aria-hidden="true"> Netlify&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://gh.vince.pub/"><i class="iconfont icon-github" aria-hidden="true"> GitHub&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://coding.vince.pub/"><i class="iconfont icon-coding" aria-hidden="true"> Coding&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://vercel.vince.pub/"><i class="iconfont icon-sanjiaoxing" aria-hidden="true"> Vercel&nbsp</i></a><br><a href="https://i.vince.pub/about/#相关内容及信息"><i class="iconfont icon-zhuangtai" aria-hidden="true"> 状态&nbsp</i></a>
+                    <a target="_blank" rel="noopener" href="https://www.vince.pub/"><i class="iconfont icon-icon_wangye" aria-hidden="true"> 主站&nbsp</i></a><a target="_blank" rel="noopener" href="https://file.vince.pub"><i class="iconfont icon-wenjianjia" aria-hidden="true"> 下载</i></a>
+                    <br>
+                </p>
+                <p><i class="iconfont icon-qitalaji" aria-hidden="true"></i><a href="https://i.vince.pub/" target="_blank" rel="nofollow noopener">© 2020 Vince </a>
+                    <a href="https://i.vince.pub/" target="_blank" rel="nofollow noopener"></a> | <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">闽ICP备20006816号-1</a>
+                </p>
+            </div>
+            
+
+                
+
+                    
+        </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+  
+<script src="/js/demo.js"></script>
+<script src="https://cdn.vince.pub/blog-file/js/horizontalmenu.js"></script>
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: 'article.markdown-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "搭配 Fluid 如何优雅的写一篇文章&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    <!-- Baidu Analytics -->
+    <script defer>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?7b15c27c537bee99d8a4405d874d459f";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+</body>
+</html>
